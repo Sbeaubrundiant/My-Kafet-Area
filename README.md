@@ -10,3 +10,12 @@ faciliter la prise de décision et ainsi optimiser la gestion de ça journée.
 
 Nombreux sont ceux qui possedent des allergies allimentaires, ces informations importantes sont notifiés aux collaborateurs.
 
+
+# Personas
+![](https://github.com/Sbeaubrundiant/My-Kafet-Area/blob/master/Ref/image/Mike%20Kitchen.png)
+![](https://github.com/Sbeaubrundiant/My-Kafet-Area/blob/master/Ref/image/Robin%20hood.png)
+![](https://github.com/Sbeaubrundiant/My-Kafet-Area/blob/master/Ref/image/gwen%20fitness.png)
+
+
+
+
