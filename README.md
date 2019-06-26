@@ -1,5 +1,8 @@
 ### Master Piece
 
+**Table of Contents**
+
+
 # My Kafet'Area : Why ?
 My Kafet'Area is for collaborator who works in automated site.
 With My K'A you got all you need to) know about Gastronomie on your working site. So you can follow the Kitchen Chanel and beeing in touch about what the Chef have been cooked for lunch and  books it. Then you'll eat what you choosed for sure. After finish eating, feel free to leave a comment about what you had eat.
@@ -42,19 +45,19 @@ Nombreux sont ceux qui possedent des allergies allimentaires, ces informations i
 # User Stories
 
 - US1
-   As a User I want to Log into the app
+As a User I want to Log into the app
 - US2
-   As a User I want to consult canteen menus
+As a User I want to consult canteen menus
 - US3
-   As a User I want to book a dish
-- US4 
-   As a USer I want to consult Kitchen real-time affluence
+As a User I want to book a dish
+- US4
+As a USer I want to consult Kitchen real-time affluence 
 - US5
-   As a User I want to consult the kitchen event agenda
--US6
-   As a User I want to be notify about Kitchen event
--US7
-   As a User I want the la vallée event agenda
-- US8 
-   As a user I want to be notified about "La vallée" event agenda
+As a User I want to consult the kitchen event agenda 
+- US6
+As a User I want to be notify about Kitchen event 
+- US7
+As a User I want the la vallée event agenda 
+- US8
+As a user I want to be notified about "La vallée" event agenda
 
