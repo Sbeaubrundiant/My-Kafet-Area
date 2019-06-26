@@ -4,8 +4,8 @@
 
 
 # My Kafet'Area : Why ?
-My Kafet'Area is for collaborator who works in automated site.
-With My K'A you got all you need to) know about Gastronomie on your working site. So you can follow the Kitchen Chanel and beeing in touch about what the Chef have been cooked for lunch and  books it. Then you'll eat what you choosed for sure. After finish eating, feel free to leave a comment about what you had eat.
+My Kafet'Area is for collaborator who works in automated site. With My K'A you got all you need to know about Gastronomie on your working site. It allow the user to optimize his canteen experience, while the restaurant team will be able to adapt chirurgicaly their cooking rate. It brings a dynamique offert to the eating needs. 
+After finish eating, feel free to leave a comment about what you had eat.
 Special Events are often taking place in "La Vallée", the common place, so you can consult the event agenda and beeing notify about it . 
 Lunch time is one of the most important day part, and avoiding the waste time is great deal, so you can consult in real time the Kafet'Area afluence, helping you, choosing the right moment for you.
 Eating is usualy a pleasure, except for those who are allergic, they need to know if there  are and what they are allergenes, for them to eat safely.
@@ -34,6 +34,7 @@ Nombreux sont ceux qui possedent des allergies allimentaires, ces informations i
 - Login page 
 - Consult canteen menus
 - Book a dish
+- Leave comment about eated dish
 - consult Kitchen real-time affluence
 - Consult the Kitchen event agenda
 - Notify about Kitchen event 
@@ -58,4 +59,6 @@ As a User I want to be notify about Kitchen event
 As a User I want the la vallée event agenda 
 - US8
 As a user I want to be notified about "La vallée" event agenda
+- US9
+As a user I want to leave a comment about the lunch I eated
 
