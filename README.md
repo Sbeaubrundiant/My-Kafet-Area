@@ -1,6 +1,9 @@
 ### Master Piece
 
 **Table of Contents**
+-   [Why](#My-Kafet'Area-:-Why-?)
+
+
 
 
 # My Kafet'Area : Why ?
