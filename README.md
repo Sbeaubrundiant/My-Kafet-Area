@@ -11,19 +11,17 @@ Lunch time is one of the most important day part, and avoiding the waste time is
 Eating is usualy a pleasure, except for those who are allergic, they need to know if there  are and what they are allergenes, for them to eat safely.
 
 
-
-
-   
+ 
 # My Kafet'Area : Pourquoi ?
    My Kafet'Area se tourne vers les collaborateurs de site équipé en domotique. 
-Avec My K'A c'est toute l’actualité Gastronomique concentré au même endroit avec la possibilité de consulter 
-le menu de la cantine et de le réserver. Des événements à thème sont régulièrement organisés au sein
-de "La Vallée" zone commune, un agenda permet d’être informé du déroulement de ses derniers, tout étant notifier 
-du déroulement de celui ci. Aussi la pause déjeuner est moment charnière dans la journée et trouver le meilleur moment
-pour y aller n'est pas chose aisée, une évaluation de l'affluence en temps réel peux être consulter sur l'appli afin de
-faciliter la prise de décision et ainsi optimiser la gestion de ça journée.
+Avec My K'A c'est toute l’actualité Gastronomique qui est concentrée dans la même application.Elle donne à son utilisateur la possibilité d'optimiser son parcourt cantine, tout en permettant à l'équipe restauration de s'adapter de maniere plus précise à la demande. C'est la mise en place d'une offre dynamique par rapport à la demande.
 
-Nombreux sont ceux qui possedent des allergies allimentaires, ces informations importantes sont notifiés aux collaborateurs.
+   Au seins de l'application My Kafet'Area, nous trouvons  la possibilité de consulter le menu de la cantine et de le réserver. Au cours de la vie sociale du site de trvail des événements à thème sont régulièrement organisés dans "La Vallée" zone commune, un agenda permet d’être informé du déroulement de ses derniers, tout étant notifié du déroulement de celui ci. 
+Aussi, la pause déjeuner est un moment charnière dans la journée et trouver le meilleur moment
+pour y aller n'est pas chose aisée, une évaluation de l'affluence en temps réel peux être consulter sur l'appli afin de
+s'y rendre au meuilleur moment et ainsi optimiser la gestion de ça journée.
+
+Nombreux sont ceux qui possedent des allergies allimentaires, ces informations importantes sont notifiés aux collaborateurs de maniere visuelle et colorée lors de la consultation des menus.
 
 
 # Personas
