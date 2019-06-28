@@ -1,6 +1,6 @@
 ---
 name: Epic issue template
-about: Eplic issue
+about: Epic issue
 title: ''
 labels: ''
 assignees: ''
