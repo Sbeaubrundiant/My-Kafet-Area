@@ -7,7 +7,7 @@ import Button from 'react-bootstrap/Button';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { useHistory} from "react-router-dom";
 
-export default function Home() {
+export default function Login() {
   // function push vers url et mon onclick appel la fonction push
   let history = useHistory();
   function handleClick(){
