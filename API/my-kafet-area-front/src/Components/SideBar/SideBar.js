@@ -10,8 +10,8 @@ export default props => {
   return (
     // Pass on our props
     <Menu {...props}>
-      <a className="menu-item"  href="/"  >
-      Login
+      <a className="menu-item"  href="/homeCollaborator"  >
+        Home
       </a >
 
       <a className="menu-item" href="/starters" >

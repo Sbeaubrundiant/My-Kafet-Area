@@ -3,18 +3,18 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@types/jest": "^24.0.18",
-    "@types/node": "^12.7.8",
-    "@types/react": "^16.9.3",
-    "@types/react-dom": "^16.9.1",
+    "@types/jest": "^24.0.22",
+    "@types/node": "^12.12.7",
+    "@types/react": "^16.9.11",
+    "@types/react-dom": "^16.9.4",
     "bootstrap": "^4.3.1",
-    "react": "^16.9.0",
-    "react-bootstrap": "^1.0.0-beta.12",
-    "react-burger-menu": "^2.6.11",
-    "react-dom": "^16.9.0",
-    "react-router-dom": "^5.1.0",
+    "react": "^16.11.0",
+    "react-bootstrap": "^1.0.0-beta.14",
+    "react-burger-menu": "^2.6.12",
+    "react-dom": "^16.11.0",
+    "react-router-dom": "^5.1.2",
     "react-scripts": "3.1.2",
-    "typescript": "^3.6.3"
+    "typescript": "^3.7.2"
   },
   "scripts": {
     "start": "react-scripts start",

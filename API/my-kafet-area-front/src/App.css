@@ -16,12 +16,15 @@ body {
   /* Prevent sidebar from showing a scrollbar on page */
   overflow: auto;
 }
-#Pick-up-line{
 
-  font-family: cursive; color:#DC143C;
+#Pick-up-line {
+  font-size: 8vw;
+  font-family: cursive;
+  color: #DC143C;
   margin-bottom: 15px;
- margin-left: 15px;
- margin-right: 15px;
+  margin-left: 45px;
+  margin-right: 15px;
+  padding-left: 5vw;
 }
 
 
@@ -50,6 +53,8 @@ body {
   height: 30px;
   left: 36px;
   top: 36px;
+ 
+
 }
 
 /* Color/shape of burger icon bars */
@@ -94,7 +99,8 @@ a.bm-item {
   position: relative;
   margin-bottom: 35px;
 }
-a.bm-item.menu-item img  {
+
+a.bm-item.menu-item img {
   position: absolute;
   height: 48px;
   top: 50%;
@@ -103,23 +109,100 @@ a.bm-item.menu-item img  {
 }
 
 
-#formBasicEmail , #formBasicPassword{
+#formBasicEmail,
+#formBasicPassword {
   width: 60%;
   margin-top: 5%;
-  margin-left: 20%; margin-right:20%;
+  margin-left: 20%;
+  margin-right: 20%;
 }
-#mailHolder, #passwordHolder  {
+
+#mailHolder,
+#passwordHolder {
   text-align: center;
 }
+
 .text-muted {
   text-align: center;
-  }
-#formBasicCheckbox{
-margin-left: 25%; margin-right: 25%;
 }
-#homeSubmitButton, #homeForgotPassword{
+
+#formBasicCheckbox {
+  margin-left: 25%;
+  margin-right: 25%;
+}
+
+#homeSubmitButton,
+#homeForgotPassword {
   text-align: center;
   width: 30%;
-  margin-left: 35%; margin-right: 35%; margin-bottom: 2px;
-  color: black; background-color: #b30000;
+  margin-left: 35%;
+  margin-right: 35%;
+  margin-bottom: 2px;
+  color: black;
+  background-color: #b30000;
+}
+
+#reservedTitle {
+  text-align: left;
+  font-size:15px;
+  font-stretch: wider;
+  
+  background-color: lightgrey;
+  border: 2px solid red;
+  border-radius: 5px;
+  
+}
+
+.proposedStarterZone {
+  width: 250px;
+  height: 225px;
+  text-align: center;
+  border : 2px solid blue;
+  position: relative;
+  overflow: hidden;
+  border-radius: 5px;
+}
+.proposedStarterZone img {
+  min-width: 100%;
+  height: auto;
+}
+.dropdown {
+  position: absolute;
+  top: 100%;
+  transition: top .6s ease-in-out;
+  transition: opacity 1.2s ease-in-out;
+  z-index: 10;
+  width: 100%;
+  background: blue;
+  height: 100%;
+}
+.dropdown h4 {
+  transition: all .3s; 
+  transition-delay: 1s;
+}
+.proposedStarterZone:hover .dropdown {
+  top: -225px;
+  transition-delay: 0.3s;
+  background: rgba(0, 0, 255, 0.6);
+}
+.proposedStarterZone:hover .dropdown h4 {
+  transform: scale(2);
+}
+
+#proposedStarterPicture, #bonap {
+  max-width: 100%
+}           
+
+#proposedStarerName {
+font-size: 6vw;
+}
+
+#page-wrap {
+  display: flex; 
+  flex-flow: row wrap;
+  align-items: baseline;
+  justify-content: space-evenly;
+}
+#page-wrap div {
+  flex-grow: 1;
 }
