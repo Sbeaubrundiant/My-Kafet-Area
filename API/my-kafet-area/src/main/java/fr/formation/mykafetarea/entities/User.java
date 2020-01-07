@@ -7,11 +7,29 @@ import javax.persistence.Id;
 @Entity
 public class User {
 	
+
 	
 	@Id
 	@Column(nullable = false)
-    private String id;
+	private String id;
+
+	@Column(nullable =false)
+	private String name;
 	
+	@Column(nullable =false)
+	private String firstname;
+	
+	@Column(nullable =false)
+	private String email;
+	
+	@Column(nullable =false)
+	private String password;
+	
+	public User(){
+		
+	}
+
+
 	public String getId() {
 		return id;
 	}
@@ -52,17 +70,7 @@ public class User {
 		this.password = password;
 	}
 
-	@Column(nullable =false)
-	private String name;
-	
-	@Column(nullable =false)
-	private String firstname;
-	
-	@Column(nullable =false)
-	private String email;
-	
-	@Column(nullable =false)
-	private String password;
+
 	
 //	@OneToOne(mappedBy= "workId", fetch = FetchType.LAZY)
 //	private Set<Role> roles;
