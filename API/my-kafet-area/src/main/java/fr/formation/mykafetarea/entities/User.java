@@ -25,7 +25,7 @@ public class User {
 	@Column(nullable =false)
 	private String password;
 	
-	public User(){
+	public User(String id, String firstname, String email, String password){
 		
 	}
 
@@ -68,6 +68,11 @@ public class User {
 
 	public void setPassword(String password) {
 		this.password = password;
+	}
+
+
+	public User getId(String id2) {
+		return null;
 	}
 
 
