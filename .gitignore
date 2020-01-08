@@ -1,5 +1,7 @@
 # Reference folder
 Ref/
+WebContent/
+
 
 # Compiled class file
 *.class
