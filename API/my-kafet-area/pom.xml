@@ -8,7 +8,7 @@
 		<version>2.1.9.RELEASE</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>fr.formation.</groupId>
+	<groupId>fr.formation</groupId>
 	<artifactId>my-kafet-area</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>my-kafet-area</name>
