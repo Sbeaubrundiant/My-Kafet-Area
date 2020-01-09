@@ -2,7 +2,6 @@ package fr.formation.mykafetarea.entities;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
-import javax.persistence.FetchType;
 import javax.persistence.Id;
 import javax.persistence.OneToOne;
 
@@ -25,8 +24,6 @@ public class User {
 	@Column(nullable =false)
 	private String password;
 	
-	
-
 
 	public String getId(String id) {
 		return id;
@@ -68,6 +65,7 @@ public class User {
 		this.password = password;
 	}
 
+	
 	@OneToOne
 	private Role role;
 
