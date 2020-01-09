@@ -5,6 +5,7 @@ import org.springframework.stereotype.Service;
 
 import fr.formation.mykafetarea.dtos.UserCreateDto;
 import fr.formation.mykafetarea.entities.User;
+import fr.formation.mykafetarea.repositories.UserRepository;
 
 @Service
 public class UserServiceImpl implements UserService{

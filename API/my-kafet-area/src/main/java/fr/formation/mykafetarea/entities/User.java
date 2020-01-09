@@ -24,7 +24,6 @@ public class User {
 	@Column(nullable =false)
 	private String password;
 	
-
 	public String getId(String id) {
 		return id;
 	}
@@ -70,7 +69,7 @@ public class User {
 	private Role role;
 
 	//Default constructor
-	public User(){
+	public User(String id, String name, String firstname, String email, String password){
 	}
 
 	@Override
@@ -81,7 +80,6 @@ public class User {
 
 	
 
-	
 	}
 
 

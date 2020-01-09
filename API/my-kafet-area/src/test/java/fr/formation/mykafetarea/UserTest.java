@@ -28,7 +28,7 @@ public class UserTest {
 
     @Test 
     public void toStringTest(){
-        User user = new User();
+        User user = new User(id, name, firstname, email, password );
 
         String testResult = user.toString();
 
