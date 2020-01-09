@@ -10,10 +10,9 @@ import fr.formation.mykafetarea.repositories.UserRepository;
 @Service
 public class UserServiceImpl implements UserService{
 
-  
-    private final UserRepository userRepository;
    
-	private ModelMapper mapper;
+    private final UserRepository userRepository;
+   	private ModelMapper mapper;
    
 
 
