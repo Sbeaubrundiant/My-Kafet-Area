@@ -10,6 +10,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 public class MyKafetAreaApplicationTests {
 
 	@Test
+	// Check for the App loading context
 	public void contextLoads() {
 	}
 

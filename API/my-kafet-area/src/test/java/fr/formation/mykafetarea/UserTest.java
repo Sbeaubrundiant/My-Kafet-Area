@@ -1,18 +1,16 @@
-package fr.formation.mykafetarea.testEntities;
+package fr.formation.mykafetarea;
 
-import static org.junit.Assert.assertArrayEquals;
-import static org.junit.Assert.assertEquals;
 
-import org.junit.Test;
+
 import org.junit.runner.RunWith;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
-import fr.formation.mykafetarea.entities.User;
+
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
-public class TestUser {
+public class UserTest {
 
     private String id;
     private String name;

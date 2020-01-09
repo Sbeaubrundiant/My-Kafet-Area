@@ -71,6 +71,7 @@ public class User {
 	@OneToOne
 	private Role role;
 
+	//Default constructor
 	public User(){
 	}
 
@@ -89,8 +90,6 @@ public class User {
 
 	
 	
-//	private Set<Role> roles;
-//@OneToOne(mappedBy= "id", fetch = FetchType.LAZY)
 
 	
 	
