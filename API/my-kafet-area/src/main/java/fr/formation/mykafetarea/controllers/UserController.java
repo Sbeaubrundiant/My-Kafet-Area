@@ -1,22 +1,35 @@
 package fr.formation.mykafetarea.controllers;
 
-import org.springframework.beans.factory.annotation.Autowired;
 
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import fr.formation.mykafetarea.dtos.UserCreateDto;
 import fr.formation.mykafetarea.services.UserService;
+
+import javax.validation.Valid;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+
 
 @RestController
 @RequestMapping("/mkaUser")
 public class UserController {
-	
-	@Autowired
-	private UserService service;
 
+
+	private final UserService userService;
 	
-	protected UserController(UserService service) {
-		this.service = service;
+	protected UserController( UserService userService) {
+		this.userService = userService;
 	}
+
+	@PostMapping
+	public void save(@Valid @RequestBody UserCreateDto dto) {
+		userService.save(dto);
+	}
+	
 
 }

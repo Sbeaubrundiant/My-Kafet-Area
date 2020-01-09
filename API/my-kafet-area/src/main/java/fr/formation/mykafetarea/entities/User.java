@@ -2,13 +2,13 @@ package fr.formation.mykafetarea.entities;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.Id;
+import javax.persistence.OneToOne;
 
 @Entity
 public class User {
-	
 
-	
 	@Id
 	@Column(nullable = false)
 	private String id;
@@ -25,12 +25,10 @@ public class User {
 	@Column(nullable =false)
 	private String password;
 	
-	public User(String id, String firstname, String email, String password){
-		
-	}
+	
 
 
-	public String getId() {
+	public String getId(String id) {
 		return id;
 	}
 
@@ -70,17 +68,31 @@ public class User {
 		this.password = password;
 	}
 
+	@OneToOne
+	private Role role;
 
-	public User getId(String id2) {
-		return null;
+	public User(){
+	}
+
+	@Override
+	public String toString() {
+		return "User [email=" + email + ", firstname=" + firstname + ", id=" + id + ", name=" + name + ", password="
+				+ password + ", role=" + role + "]";
+	}
+
+	
+
+	
 	}
 
 
+
 	
-//	@OneToOne(mappedBy= "workId", fetch = FetchType.LAZY)
+	
 //	private Set<Role> roles;
+//@OneToOne(mappedBy= "id", fetch = FetchType.LAZY)
 
 	
 	
 
-}
+
