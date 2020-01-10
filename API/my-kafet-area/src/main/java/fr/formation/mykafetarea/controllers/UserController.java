@@ -10,6 +10,7 @@ import fr.formation.mykafetarea.services.UserService;
 import javax.validation.Valid;
 
 
+
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 
@@ -20,8 +21,8 @@ public class UserController {
 
 
 	private final UserService userService;
-	
-	protected UserController( UserService userService) {
+
+	protected UserController(UserService userService) {
 		this.userService = userService;
 	}
 

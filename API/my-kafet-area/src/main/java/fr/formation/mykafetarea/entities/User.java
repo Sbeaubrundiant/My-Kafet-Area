@@ -4,8 +4,10 @@ import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.OneToOne;
+import javax.persistence.Table;
 
 @Entity
+@Table(name = "users")
 public class User {
 
 	@Id
@@ -23,6 +25,16 @@ public class User {
 	
 	@Column(nullable =false)
 	private String password;
+
+	//Default constructor
+	public User(String id, String name, String firstname, String email, String password){
+		this.id = id;
+		this.name = name;
+		this.firstname = firstname;
+		this. email = email;
+		this.password = password;
+		
+	}
 	
 	public String getId(String id) {
 		return id;
@@ -68,9 +80,7 @@ public class User {
 	@OneToOne
 	private Role role;
 
-	//Default constructor
-	public User(String id, String name, String firstname, String email, String password){
-	}
+	
 
 	@Override
 	public String toString() {

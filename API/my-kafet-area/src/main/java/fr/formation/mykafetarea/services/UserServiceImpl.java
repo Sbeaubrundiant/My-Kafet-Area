@@ -1,6 +1,9 @@
 package fr.formation.mykafetarea.services;
 
 import org.modelmapper.ModelMapper;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.context.annotation.Bean;
 import org.springframework.stereotype.Service;
 
 import fr.formation.mykafetarea.dtos.UserCreateDto;
@@ -10,12 +13,12 @@ import fr.formation.mykafetarea.repositories.UserRepository;
 @Service
 public class UserServiceImpl implements UserService{
 
-   
-    private final UserRepository userRepository;
+    @Autowired 
+    private UserRepository userRepository;
    	private ModelMapper mapper;
    
 
-
+   
     public UserServiceImpl(UserRepository userRepository, ModelMapper mapper) {
         this.mapper = mapper;
         this.userRepository = userRepository;
