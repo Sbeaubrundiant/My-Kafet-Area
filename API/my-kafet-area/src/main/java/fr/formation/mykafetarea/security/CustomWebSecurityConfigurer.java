@@ -40,13 +40,13 @@ public class CustomWebSecurityConfigurer extends WebSecurityConfigurerAdapter {
 	return false;
     }
     
-    AuthenticationManagerResolver<HttpServletRequest> resolver() {
-        return request -> {
-            if (request.getPathInfo().startsWith("/mkaUser")) {
-                return employeesAuthenticationManager();
-            }
-            return customersAuthenticationManager();
-        };
-    }
+    // AuthenticationManagerResolver<HttpServletRequest> resolver() {
+    //     return request -> {
+    //         if (request.getPathInfo().startsWith("/mkaUser")) {
+    //             return employeesAuthenticationManager();
+    //         }
+    //         return customersAuthenticationManager();
+    //     };
+    // }
    
 }
