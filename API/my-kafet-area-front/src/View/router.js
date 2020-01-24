@@ -8,17 +8,21 @@ import Starters from "./Collaborator/Starters.js";
 import Dishes from "./Collaborator/Dishes.js";
 import ForgottenPassword from "./Login/ForgottenPassword";
 import Desserts from "./Collaborator/Desserts.js";
+import CulinaryProposition from "./kitchenBrigade/CulinaryProposition.js";
+import BrigadeArea from "./kitchenBrigade/BrigadeArea.js";
 
 export default function AppRouter() {
   return (
     <Router>
       <SideBar />
       <Route exact path="/" component={props => <LoginPage {...props} />} />
-      <Route exact path="/homeCollaborator" component={props => <HomeCollaborator {...props} />} />
+      <Route exact path="/homecollaborator" component={props => <HomeCollaborator {...props} />} />
       <Route exact path="/starters" component={props => <Starters {...props} />} />
       <Route exact path="/dishes" component={props => <Dishes {...props} />} />
       <Route exact path="/desserts" component={props => <Desserts {...props}/>} />
       <Route exact path="/forgottenpassword" component={props => <ForgottenPassword {...props} />} />
-    </Router>
+      <Route exact path="/culinaryproposition" component={props => <CulinaryProposition {...props} />} />
+      <Route exact path="/brigadearea" component={props => <BrigadeArea {...props} />} />
+          </Router>
   );
 }

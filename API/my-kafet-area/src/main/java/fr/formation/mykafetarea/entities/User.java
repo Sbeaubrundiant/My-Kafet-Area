@@ -25,8 +25,16 @@ public class User {
 	
 	@Column(nullable =false)
 	private String password;
+	
+
+	@OneToOne
+	private Role role;
 
 	//Default constructor
+	public User() {
+		
+	}
+	
 	public User(String id, String name, String firstname, String email, String password){
 		this.id = id;
 		this.name = name;
@@ -35,6 +43,7 @@ public class User {
 		this.password = password;
 		
 	}
+	
 	
 	public String getId(String id) {
 		return id;
@@ -77,8 +86,6 @@ public class User {
 	}
 
 	
-	@OneToOne
-	private Role role;
 
 	
 
