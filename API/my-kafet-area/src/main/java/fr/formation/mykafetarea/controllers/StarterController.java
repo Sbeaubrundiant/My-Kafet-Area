@@ -1,4 +1,4 @@
-package fr.formation.mka.controllers;
+fr.formation.mykafetarea.controllers
 
 import java.util.List;
 
