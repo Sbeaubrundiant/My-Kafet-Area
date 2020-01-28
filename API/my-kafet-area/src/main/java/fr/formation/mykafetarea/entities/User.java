@@ -1,19 +1,26 @@
-package fr.formation.mykafetarea.entities;
+package fr.formation.mka.entities;
+
+/**
+ * @author Steven  BEAUBRUN EN FAMILLE DIANT
+ *
+ */
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.OneToOne;
 import javax.persistence.Table;
 
 @Entity
 @Table(name = "users")
 public class User {
-
+	
+	
 	@Id
 	@Column(nullable = false)
-	private String id;
-
+    private String id;
+	
 	@Column(nullable =false)
 	private String name;
 	
@@ -26,85 +33,104 @@ public class User {
 	@Column(nullable =false)
 	private String password;
 	
+//	@OneToOne(mappedBy= "Id", fetch = FetchType.LAZY)
+//	private Set<Role> roles;
 
-	@OneToOne
-	private Role role;
-
-	//Default constructor
+	/**
+	 * Default Constructor no args
+	 */
 	public User() {
-		
 	}
-	
-	public User(String id, String name, String firstname, String email, String password){
-		this.id = id;
-		this.name = name;
-		this.firstname = firstname;
-		this. email = email;
-		this.password = password;
-		
-	}
-	
-	
-	public String getId(String id) {
+
+	/**
+	 * @return the id
+	 */
+	public String getId() {
 		return id;
 	}
 
+	/**
+	 * @param id the id to set
+	 */
 	public void setId(String id) {
 		this.id = id;
 	}
 
+	/**
+	 * @return the name
+	 */
 	public String getName() {
 		return name;
 	}
 
+	/**
+	 * @param name the name to set
+	 */
 	public void setName(String name) {
 		this.name = name;
 	}
 
+	/**
+	 * @return the firstname
+	 */
 	public String getFirstname() {
 		return firstname;
 	}
 
+	/**
+	 * @param firstname the firstname to set
+	 */
 	public void setFirstname(String firstname) {
 		this.firstname = firstname;
 	}
 
+	/**
+	 * @return the email
+	 */
 	public String getEmail() {
 		return email;
 	}
 
+	/**
+	 * @param email the email to set
+	 */
 	public void setEmail(String email) {
 		this.email = email;
 	}
 
+	/**
+	 * @return the password
+	 */
 	public String getPassword() {
 		return password;
 	}
 
+	/**
+	 * @param password the password to set
+	 */
 	public void setPassword(String password) {
 		this.password = password;
 	}
 
-	
-
-	
+//	/**
+//	 * @return the roles
+//	 */
+//	public Set<Role> getRoles() {
+//		return roles;
+//	}
+//
+//	/**
+//	 * @param roles the roles to set
+//	 */
+//	public void setRoles(Set<Role> roles) {
+//		this.roles = roles;
+//	}
 
 	@Override
 	public String toString() {
-		return "User [email=" + email + ", firstname=" + firstname + ", id=" + id + ", name=" + name + ", password="
-				+ password + ", role=" + role + "]";
+		return "User [id=" + id + ", name=" + name + ", firstname=" + firstname + ", email=" + email + ", password="
+				+ password + "]";
 	}
-
-	
-
-	}
-
-
-
 	
 	
-
-	
-	
-
-
+}

@@ -1,7 +1,13 @@
-package fr.formation.mykafetarea.entities;
+package fr.formation.mka.entities;
+/**
+ * @author Steven  BEAUBRUN EN FAMILLE DIANT
+ *
+ */
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 import javax.validation.constraints.Positive;
@@ -11,7 +17,8 @@ import javax.validation.constraints.Positive;
 public class Starter {
 	
 	@Id
-	@Column(nullable = false)
+	@GeneratedValue(strategy = GenerationType.AUTO)
+   	@Column(nullable = false)
 	private String id;
 	
 	@Column(nullable =false)
@@ -27,6 +34,100 @@ public class Starter {
 	@Column(nullable =false)
 	@Positive
 	private Long price;
+
+
+	/**
+	 * Default Constructor no args
+	 */
+	public Starter() {
+	}
+
+
+	/**
+	 * @return the id
+	 */
+	public String getId() {
+		return id;
+	}
+
+
+	/**
+	 * @param id the id to set
+	 */
+	public void setId(String id) {
+		this.id = id;
+	}
+
+
+	/**
+	 * @return the name
+	 */
+	public String getName() {
+		return name;
+	}
+
+
+	/**
+	 * @param name the name to set
+	 */
+	public void setName(String name) {
+		this.name = name;
+	}
+
+
+	/**
+	 * @return the description
+	 */
+	public String getDescription() {
+		return description;
+	}
+
+
+	/**
+	 * @param description the description to set
+	 */
+	public void setDescription(String description) {
+		this.description = description;
+	}
+
+
+	/**
+	 * @return the allergens
+	 */
+	public String getAllergens() {
+		return allergens;
+	}
+
+
+	/**
+	 * @param allergens the allergens to set
+	 */
+	public void setAllergens(String allergens) {
+		this.allergens = allergens;
+	}
+
+
+	/**
+	 * @return the price
+	 */
+	public Long getPrice() {
+		return price;
+	}
+
+
+	/**
+	 * @param price the price to set
+	 */
+	public void setPrice(Long price) {
+		this.price = price;
+	}
+
+
+	@Override
+	public String toString() {
+		return "Starter [id=" + id + ", name=" + name + ", description=" + description + ", allergens=" + allergens
+				+ ", price=" + price + "]";
+	}
 	
 	
 	

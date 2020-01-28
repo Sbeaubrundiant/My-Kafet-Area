@@ -1,4 +1,5 @@
-package fr.formation.mykafetarea.dtos;
+package fr.formation.mka.dtos;
+
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Positive;
 import javax.validation.constraints.Size;
@@ -6,9 +7,6 @@ import javax.validation.constraints.Size;
 public class StarterCreateDto {
 	
 
-	@NotNull
-    @Size(max = 8, message = "{E_MAX_LENGTH_EXCEEDED}")
-	private String id;
 	
 	@NotNull
     @Size(max = 65, message = "{E_MAX_LENGTH_EXCEEDED}")
@@ -28,18 +26,94 @@ public class StarterCreateDto {
 	@Positive
 	private Long price;
 
-	public  StarterCreateDto() {
-		super();
-		// TODO Auto-generated constructor stub
 	
+	
+	/**
+	 * Default Constructor no args
+	 */
+	public StarterCreateDto() {
 	}
-	
-	
+
+
+
+	/**
+	 * @return the name
+	 */
+	public String getName() {
+		return name;
+	}
+
+
+
+	/**
+	 * @param name the name to set
+	 */
+	public void setName(String name) {
+		this.name = name;
+	}
+
+
+
+	/**
+	 * @return the description
+	 */
+	public String getDescription() {
+		return description;
+	}
+
+
+
+	/**
+	 * @param description the description to set
+	 */
+	public void setDescription(String description) {
+		this.description = description;
+	}
+
+
+
+	/**
+	 * @return the allergens
+	 */
+	public String getAllergens() {
+		return allergens;
+	}
+
+
+
+	/**
+	 * @param allergens the allergens to set
+	 */
+	public void setAllergens(String allergens) {
+		this.allergens = allergens;
+	}
+
+
+
+	/**
+	 * @return the price
+	 */
+	public Long getPrice() {
+		return price;
+	}
+
+
+
+	/**
+	 * @param price the price to set
+	 */
+	public void setPrice(Long price) {
+		this.price = price;
+	}
+
+
+
 	@Override
 	public String toString() {
-		return "StarterCreateDto [id=" + id + ", name=" + name + ", description=" + description + ", allergens="
-				+ allergens + ", price=" + price + ", getClass()=" + getClass() + ", hashCode()=" + hashCode()
-				+ ", toString()=" + super.toString() + "]";
+		return "StarterCreateDto [name=" + name + ", description=" + description + ", allergens="
+				+ allergens + ", price=" + price + "]";
 	}
+	
+	
 	
 }

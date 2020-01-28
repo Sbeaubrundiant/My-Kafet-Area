@@ -1,19 +1,17 @@
-package fr.formation.mykafetarea.services;
+package fr.formation.mka.services;
 
 import java.util.List;
 
 import javax.validation.Valid;
 
-import fr.formation.mykafetarea.dtos.StarterCreateDto;
+import fr.formation.mka.dtos.StarterCreateDto;
 
 public interface StarterService {
 
-	public void save(@Valid StarterCreateDto dto) ;
-		// TODO Auto-generated method stub
-		
-	
+	public void create(@Valid StarterCreateDto dto);
 
-	public List<StarterCreateDto> findAll() ;
+	public List<StarterCreateDto> findAll();
 
-	
+	public List<StarterCreateDto> findById(String id);
+
 }

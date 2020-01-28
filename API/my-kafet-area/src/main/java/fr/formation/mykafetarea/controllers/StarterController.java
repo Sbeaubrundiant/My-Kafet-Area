@@ -1,4 +1,4 @@
-package fr.formation.mykafetarea.controllers;
+package fr.formation.mka.controllers;
 
 import java.util.List;
 
@@ -12,9 +12,8 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import fr.formation.mykafetarea.dtos.StarterCreateDto;
-import fr.formation.mykafetarea.services.StarterService;
-
+import fr.formation.mka.dtos.StarterCreateDto;
+import fr.formation.mka.services.StarterService;
 
 @RestController
 @RequestMapping("/starters")
@@ -22,22 +21,49 @@ public class StarterController {
 
 	private final StarterService starterService;
 	
-	protected StarterController(@RequestBody StarterService starterService) {
+	protected StarterController(StarterService starterService) {
 		this.starterService = starterService;
 	}
 	
-	@PostMapping
-	public void save(@Valid @RequestBody StarterCreateDto dto) {
-		starterService.save(dto);
+	/**
+     * Endpoint to create starters with given inputs.
+     *
+     * ' @param dto ' represents ths inputs related to starter to create
+     * 
+     */
+	
+	@PostMapping("/createstarters")
+	public void create(@Valid @RequestBody StarterCreateDto dto) {
+		starterService.create(dto);
 		
 	}
 	
-	@GetMapping("/all")
+	/**
+     * Endpoint to retrieve the informations of all starters .
+     *
+     * @return the informations of all saved starters
+     */
+	
+	
+	
+	@GetMapping("/starters")
 	ResponseEntity<List<StarterCreateDto>> findAll() {
 		List<StarterCreateDto> starter = starterService.findAll();
 		return new ResponseEntity<>(starter, HttpStatus.OK);
 			
 		
+	}
+	
+	/**
+     * Endpoint to retrieve starter informations of an saved starter.
+     *
+     * @return the informations of an saved starter
+     */
+	
+	@GetMapping("/byid/{id}")
+	ResponseEntity<List<StarterCreateDto>> findById(String id) {
+		List<StarterCreateDto> starter = starterService.findById(id);
+		return new ResponseEntity<>(starter, HttpStatus.OK);
 	}
 	
 }

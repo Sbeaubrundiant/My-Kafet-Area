@@ -1,4 +1,4 @@
-package fr.formation.mykafetarea.entities;
+package fr.formation.mka.entities;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -17,7 +17,7 @@ public class Role {
 	private Boolean isCollaborator;
 	
 	@Column	
-	private Boolean isCateringTeam;
+	private Boolean isBrigade;
 	
 	@Column
 	private Boolean isAdmin;
