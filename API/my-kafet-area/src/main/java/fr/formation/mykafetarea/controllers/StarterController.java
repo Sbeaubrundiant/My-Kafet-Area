@@ -30,7 +30,7 @@ public class StarterController {
 	/**
      * Endpoint to create starters with given inputs.
      *
-     * ' @param dto ' represents ths inputs related to starter to create
+     * ' @param dto ' represents the inputs related to starter to create
      * 
      */
 	
@@ -62,10 +62,10 @@ public class StarterController {
      * @return the informations of an saved starter
      */
 	
-	@GetMapping("/byid/{id}")
-	ResponseEntity<List<StarterCreateDto>> findById(String id) {
-		List<StarterCreateDto> starter = starterService.findById(id);
-		return new ResponseEntity<>(starter, HttpStatus.OK);
-	}
+//	@GetMapping("/byid/{id}")
+//	ResponseEntity<List<StarterCreateDto>> findStarterById(Long id) {
+//		List<StarterCreateDto> starter = starterService.findStarterbyId(id);
+//		return new ResponseEntity<>(starter, HttpStatus.OK);
+//	}
 	
 }

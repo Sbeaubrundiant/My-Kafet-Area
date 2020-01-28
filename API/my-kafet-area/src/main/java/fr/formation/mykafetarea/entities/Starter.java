@@ -19,7 +19,7 @@ public class Starter {
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
    	@Column(nullable = false)
-	private String id;
+	private Long id;
 	
 	@Column(nullable =false)
 	private String name;
@@ -46,7 +46,7 @@ public class Starter {
 	/**
 	 * @return the id
 	 */
-	public String getId() {
+	public Long getId() {
 		return id;
 	}
 
@@ -54,7 +54,7 @@ public class Starter {
 	/**
 	 * @param id the id to set
 	 */
-	public void setId(String id) {
+	public void setId(Long id) {
 		this.id = id;
 	}
 

@@ -12,6 +12,12 @@ public interface StarterService {
 
 	public List<StarterCreateDto> findAll();
 
-	public List<StarterCreateDto> findById(String id);
+//	public List<StarterCreateDto> findById(String id);
+
+	
+
+	
+
+//	public List<StarterCreateDto> findStarterbyId(Long id);
 
 }
