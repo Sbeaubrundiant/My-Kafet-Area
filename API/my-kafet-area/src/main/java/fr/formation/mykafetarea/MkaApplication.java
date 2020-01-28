@@ -1,4 +1,4 @@
-package fr.formation.mka;
+package fr.formation.mykafetarea;
 
 import org.modelmapper.ModelMapper;
 import org.springframework.boot.SpringApplication;

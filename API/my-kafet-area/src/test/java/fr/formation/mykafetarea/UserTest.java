@@ -9,7 +9,7 @@ import org.junit.runner.RunWith;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
-import fr.formation.mykafetarea.entities.User;
+
 
 
 
@@ -28,7 +28,7 @@ public class UserTest {
 
     @Test 
     public void toStringTest(){
-        User user = new User(id, name, firstname, email, password );
+        UserTest user = new UserTest( );
 
         String testResult = user.toString();
 
