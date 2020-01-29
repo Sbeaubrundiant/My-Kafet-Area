@@ -33,7 +33,7 @@ public class Starter {
 	
 	@Column(nullable =false)
 	@Positive
-	private Long price;
+	private int price;
 	
 	
 
@@ -112,7 +112,7 @@ public class Starter {
 	/**
 	 * @return the price
 	 */
-	public Long getPrice() {
+	public int getPrice() {
 		return price;
 	}
 
@@ -120,7 +120,7 @@ public class Starter {
 	/**
 	 * @param price the price to set
 	 */
-	public void setPrice(Long price) {
+	public void setPrice(int price) {
 		this.price = price;
 	}
 
