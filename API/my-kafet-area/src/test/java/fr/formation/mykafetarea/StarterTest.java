@@ -14,13 +14,15 @@ import fr.formation.mykafetarea.entities.Starter;
 public class StarterTest {
 	
 	
-	private Object starter;
+	protected Starter starter(Long id, String name, String allergens, Long price) {
+		return this.starter(id, name, allergens, price);
+	}
 
 	@Test
 	public void starterShouldBeAStarter() {
 		Starter starterTest = new Starter(); //Starter class is tested 
 		
-		assertEquals(starterTest, starter);
+		assertEquals(starterTest, starter(null, null, null, null));
 	}
 	
 
