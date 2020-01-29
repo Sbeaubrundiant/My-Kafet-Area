@@ -13,11 +13,14 @@ import fr.formation.mykafetarea.entities.Starter;
 @SpringBootTest
 public class StarterTest {
 	
+	
+	private Object starter;
+
 	@Test
 	public void starterShouldBeAStarter() {
 		Starter starterTest = new Starter(); //Starter class is tested 
 		
-		assertEquals(starterTest, Starter.class);
+		assertEquals(starterTest, starter);
 	}
 	
 
