@@ -27,7 +27,7 @@ public class UserTest {
     //String caspereTest = testedUser.getId(id);
 
     @Test 
-    public void toStringTest(){
+    public void user(){
         UserTest user = new UserTest( );
 
         String testResult = user.toString();

@@ -34,6 +34,8 @@ public class Starter {
 	@Column(nullable =false)
 	@Positive
 	private Long price;
+	
+	
 
 
 	/**
