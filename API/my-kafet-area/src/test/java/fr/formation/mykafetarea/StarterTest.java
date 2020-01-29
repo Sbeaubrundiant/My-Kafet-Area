@@ -24,7 +24,7 @@ public class StarterTest {
 		starterTest.setName("jack"); 
 		starterTest.setDescription("description");
 		starterTest.setAllergens("allergens");
-		starterTest.setPrice(3);		
+		starterTest.setPrice(3.00);		
 		
 		assertEquals(starterTest, starter("jack", "Description", "allergens", 3));
 	}

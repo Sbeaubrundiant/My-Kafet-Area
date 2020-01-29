@@ -14,16 +14,16 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import fr.formation.mykafetarea.dtos.StarterCreateDto;
+import fr.formation.mykafetarea.entities.Starter;
 import fr.formation.mykafetarea.services.StarterService;
 
 @RestController
 @RequestMapping("/starters")
 public class StarterController {
 
-	@Autowired
 	private final StarterService starterService;
 	
-	protected StarterController(StarterService starterService) {
+	public StarterController(StarterService starterService) {
 		this.starterService = starterService;
 	}
 	
@@ -34,7 +34,7 @@ public class StarterController {
      * 
      */
 	
-	@PostMapping("/createstarters")
+	@PostMapping()
 	public void create(@Valid @RequestBody StarterCreateDto dto) {
 		starterService.create(dto);
 		
@@ -45,10 +45,8 @@ public class StarterController {
      *
      * @return the informations of all saved starters
      */
-	
-	
-	
-	@GetMapping("/starters")
+
+	@GetMapping()
 	ResponseEntity<List<StarterCreateDto>> findAll() {
 		List<StarterCreateDto> starter = starterService.findAll();
 		return new ResponseEntity<>(starter, HttpStatus.OK);
@@ -62,7 +60,7 @@ public class StarterController {
      * @return the informations of an saved starter
      */
 	
-//	@GetMapping("/byid/{id}")
+//	@GetMapping("/{id}")
 //	ResponseEntity<List<StarterCreateDto>> findStarterById(Long id) {
 //		List<StarterCreateDto> starter = starterService.findStarterbyId(id);
 //		return new ResponseEntity<>(starter, HttpStatus.OK);

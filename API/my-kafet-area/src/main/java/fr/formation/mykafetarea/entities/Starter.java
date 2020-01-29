@@ -32,8 +32,7 @@ public class Starter {
 	
 	
 	@Column(nullable =false)
-	@Positive
-	private int price;
+	private Double price;
 	
 	
 
@@ -112,7 +111,7 @@ public class Starter {
 	/**
 	 * @return the price
 	 */
-	public int getPrice() {
+	public Double getPrice() {
 		return price;
 	}
 
@@ -120,7 +119,7 @@ public class Starter {
 	/**
 	 * @param price the price to set
 	 */
-	public void setPrice(int price) {
+	public void setPrice(Double price) {
 		this.price = price;
 	}
 

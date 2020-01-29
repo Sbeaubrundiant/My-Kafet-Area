@@ -22,9 +22,8 @@ public class StarterCreateDto {
 	
 	
 	@NotNull
-    @Size(max = 4, message = "{E_MAX_LENGTH_EXCEEDED}")
-	@Positive
-	private Long price;
+   	@Positive
+	private Double price;
 
 	
 	
@@ -93,7 +92,7 @@ public class StarterCreateDto {
 	/**
 	 * @return the price
 	 */
-	public Long getPrice() {
+	public Double getPrice() {
 		return price;
 	}
 
@@ -102,7 +101,7 @@ public class StarterCreateDto {
 	/**
 	 * @param price the price to set
 	 */
-	public void setPrice(Long price) {
+	public void setPrice(Double price) {
 		this.price = price;
 	}
 

@@ -1,4 +1,4 @@
-package fr.formation.mykafetarea.service.impl;
+package fr.formation.mykafetarea.services.impl;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -5,6 +5,10 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 
+import fr.formation.mykafetarea.controllers.StarterController;
+import fr.formation.mykafetarea.services.StarterService;
+import fr.formation.mykafetarea.services.impl.StarterServiceImpl;
+
 @SpringBootApplication
 public class MkaApplication {
 
