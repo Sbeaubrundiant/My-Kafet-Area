@@ -32,7 +32,7 @@ public class LunchItemTest {
     //String caspereTest = testedUser.getId(id);
 
     @Test 
-    public void user(){
+    public void LunchItem(){
     	LunchItem lunchItem = new LunchItem();
 
         String testResult = lunchItem.toString();
