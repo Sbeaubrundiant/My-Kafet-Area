@@ -9,17 +9,22 @@ import org.junit.runner.RunWith;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
+import fr.formation.mykafetarea.entities.LunchItem;
+
 
 
 
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
-public class UserTest {
+public class LunchItemTest {
 
-    private String id = "A353791";
-    private String name = "BEAUBRUN";
-    private String firstname = "Steven";
+
+		
+    private String id = "353791";
+    private String type = "Starter";
+    private String name = "oeuf";
+    private String description = "Steven";
     private String email = "chineese@hotmail.fr";
     private String password = "tchoulou97";
 
@@ -28,11 +33,11 @@ public class UserTest {
 
     @Test 
     public void user(){
-        UserTest user = new UserTest( );
+    	LunchItem lunchItem = new LunchItem();
 
-        String testResult = user.toString();
+        String testResult = lunchItem.toString();
 
-        assertEquals("User",testResult);
+        assertEquals("LunchItem",testResult);
 
 
 

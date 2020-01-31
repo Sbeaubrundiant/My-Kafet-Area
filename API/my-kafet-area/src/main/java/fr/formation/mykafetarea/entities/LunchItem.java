@@ -42,6 +42,23 @@ public class LunchItem {
 	}
 
 	/**
+	 * @param itemId
+	 * @param type
+	 * @param name
+	 * @param description
+	 * @param allergens
+	 * @param price
+	 */
+	public LunchItem(Long itemId, String type, String name, String description, String allergens, Double price) {
+		this.itemId = itemId;
+		this.type = type;
+		this.name = name;
+		this.description = description;
+		this.allergens = allergens;
+		this.price = price;
+	}
+
+	/**
 	 * @return the id
 	 */
 	public Long getId() {
