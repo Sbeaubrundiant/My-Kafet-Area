@@ -19,25 +19,28 @@ import fr.formation.mykafetarea.entities.LunchItem;
 @SpringBootTest
 public class LunchItemTest {
 
-
+	
 		
-    private String id = "353791";
-    private String type = "Starter";
-    private String name = "oeuf";
-    private String description = "Steven";
-    private String email = "chineese@hotmail.fr";
-    private String password = "tchoulou97";
+    private Long  itemId;
+    private String type ;
+    private String name ;
+    private String description ;
+    private String allergens ;
+    private Double price ;
 
    // User testedUser = new User(id, firstname, email, password);
     //String caspereTest = testedUser.getId(id);
 
     @Test 
     public void LunchItem(){
-    	LunchItem lunchItem = new LunchItem();
+    	LunchItem lunchItem = new LunchItem(itemId, type, name, description, allergens, price);
+    
 
-        String testResult = lunchItem.toString();
-
-        assertEquals("LunchItem",testResult);
+        LunchItem testResult = new LunchItem(itemId, type, name, description, allergens, price);
+        	
+        	
+        	
+                assertEquals( lunchItem ,testResult);
 
 
 
