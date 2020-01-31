@@ -4,8 +4,6 @@ import java.util.List;
 
 import javax.validation.Valid;
 
-import org.springframework.stereotype.Component;
-
 import fr.formation.mykafetarea.dtos.LunchItemCreateDto;
 
 

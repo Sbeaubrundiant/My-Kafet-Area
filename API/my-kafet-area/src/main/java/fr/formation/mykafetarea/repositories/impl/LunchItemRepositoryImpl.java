@@ -7,9 +7,6 @@ import org.springframework.data.domain.Example;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Sort;
-import org.springframework.data.jpa.repository.Query;
-
-import fr.formation.mykafetarea.dtos.LunchItemCreateDto;
 import fr.formation.mykafetarea.entities.LunchItem;
 import fr.formation.mykafetarea.repositories.LunchItemRepository;
 
