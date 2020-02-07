@@ -135,20 +135,6 @@ public class LunchItem {
 	}
 
 	/**
-	 * @return the id
-	 */
-	public Long getid() {
-		return id;
-	}
-
-	/**
-	 * @param id the id to set
-	 */
-	public void setid(Long id) {
-		this.id = id;
-	}
-
-	/**
 	 * @return the description
 	 */
 	public String getDescription() {
