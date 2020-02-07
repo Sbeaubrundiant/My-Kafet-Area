@@ -33,10 +33,10 @@ public class LunchItemTest {
 
     @Test 
     public void LunchItem(){
-    	LunchItem lunchItem = new LunchItem(itemId, type, name, description, allergens, price);
+    	LunchItem lunchItem = new LunchItem();
     
 
-        LunchItem testResult = new LunchItem(itemId, type, name, description, allergens, price);
+        LunchItem testResult = new LunchItem();
         	
         	
         	

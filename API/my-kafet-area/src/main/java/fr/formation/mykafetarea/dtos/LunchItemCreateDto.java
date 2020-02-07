@@ -1,24 +1,25 @@
 package fr.formation.mykafetarea.dtos;
 
+import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Positive;
 import javax.validation.constraints.Size;
 
 public class LunchItemCreateDto {
 	
-	@NotNull
+	@NotBlank
 	@Size(max = 65, message = "{E_MAX_LENGTH_EXCEEDED}")
 	private String type;
 	
-	@NotNull
+	@NotBlank
 	@Size(max = 65, message = "{E_MAX_LENGTH_EXCEEDED}" )
 	private String name;
 	
-	@NotNull
+	@NotBlank
 	@Size(max = 400, message = "{E_MAX_LENGTH_EXCEEDED}")
 	private String description;
 	
-	@NotNull
+	@NotBlank
 	@Size(max = 80, message = "{E_MAX_LENGTH_EXCEEDED}")
 	private String allergens;
 	

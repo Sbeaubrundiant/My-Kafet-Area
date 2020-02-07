@@ -2,6 +2,7 @@ package fr.formation.mykafetarea.services.impl;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 
 import javax.validation.Valid;
 
@@ -45,28 +46,14 @@ public class LunchItemServiceImpl implements LunchItemService {
 		return allDtoLunchItem;
 		
 
-//		@Override
-//		public List<StarterCreateDto> findStarterbyId(Long id) {
-//			List<Starter> entities = starterRepository.findStarterById(id);
-//			return (List<StarterCreateDto>) starterRepository;
-//		}
+
 
 	}
 
-	@Override
-	public List<LunchItemCreateDto> findById(Long itemId) {
-		
-		return null;
-	}
 
 	
 
-//	@Override
-//	public List<LunchItemCreateDto> findByItemId(Long itemId) {
-//			List<LunchItemCreateDto> entities  =  lunchItemRepository.findByItemId(itemId);
-//			return (List<LunchItemCreateDto>) lunchItemRepository;
-//	}
-	
+
 	
 
 }

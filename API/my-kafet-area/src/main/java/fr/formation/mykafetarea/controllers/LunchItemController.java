@@ -4,9 +4,7 @@ import java.util.List;
 
 import javax.validation.Valid;
 
-import org.springframework.http.HttpStatus;
-import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -19,7 +17,7 @@ import fr.formation.mykafetarea.services.LunchItemService;
 @RequestMapping("/lunchitems")
 public class LunchItemController {
 	
-	
+	 
 	 private final LunchItemService lunchItemService;
 	 
 	 public LunchItemController(LunchItemService lunchItemService) {
@@ -44,13 +42,13 @@ public class LunchItemController {
 	     * @return the informations of all saved starters
 	     */
 
-		@GetMapping()
-		ResponseEntity<List<LunchItemCreateDto>> findAll() {
-			List<LunchItemCreateDto> item = lunchItemService.findAll();
-			return new ResponseEntity<>(item, HttpStatus.OK);
-				
-			
-		}
+//		@GetMapping("/all")
+//		ResponseEntity<List<LunchItemCreateDto>> findAll() {
+//			List<LunchItemCreateDto> item = lunchItemService.findAll();
+//			return new ResponseEntity<>(item, HttpStatus.OK);
+//				
+//			
+//		}
 		/**
 	     * Endpoint to retrieve lunch item informations.
 	     *

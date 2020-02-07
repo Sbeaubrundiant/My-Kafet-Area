@@ -17,7 +17,7 @@ public class LunchItem {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column(nullable = false)
-	private Long itemId;
+	private Long id;
 	
 	@Column(nullable = false)
 	private String type;
@@ -36,21 +36,21 @@ public class LunchItem {
 	private Double price;
 
 	/**
-	 * Default constructo no args
+	 * Default constructor no args
 	 */
 	public LunchItem() {
 	}
 
 	/**
-	 * @param itemId
+	 * @param id
 	 * @param type
 	 * @param name
 	 * @param description
 	 * @param allergens
 	 * @param price
 	 */
-	public LunchItem(Long itemId, String type, String name, String description, String allergens, Double price) {
-		this.itemId = itemId;
+	public LunchItem(Long id, String type, String name, String description, String allergens, Double price) {
+		this.id = id;
 		this.type = type;
 		this.name = name;
 		this.description = description;
@@ -62,15 +62,15 @@ public class LunchItem {
 	 * @return the id
 	 */
 	public Long getId() {
-		return itemId;
+		return id;
 	}
 
 	/**
-	 * @param itemId 
-	 * the itemId to set
+	 * @param id 
+	 * the id to set
 	 */
-	public void setId(Long itemId) {
-		this.itemId = itemId;
+	public void setId(Long id) {
+		this.id = id;
 	}
 
 	/**
@@ -135,17 +135,17 @@ public class LunchItem {
 	}
 
 	/**
-	 * @return the itemId
+	 * @return the id
 	 */
-	public Long getItemId() {
-		return itemId;
+	public Long getid() {
+		return id;
 	}
 
 	/**
-	 * @param itemId the itemId to set
+	 * @param id the id to set
 	 */
-	public void setItemId(Long itemId) {
-		this.itemId = itemId;
+	public void setid(Long id) {
+		this.id = id;
 	}
 
 	/**
@@ -164,7 +164,7 @@ public class LunchItem {
 
 	@Override
 	public String toString() {
-		return "LunchItem [id=" + itemId + ", type=" + type + ", name=" + name + ", allergens=" + allergens + ", price="
+		return "LunchItem [id=" + id + ", type=" + type + ", name=" + name + ", allergens=" + allergens + ", price="
 				+ price + "]";
 	}
 
