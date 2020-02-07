@@ -14,7 +14,7 @@ import fr.formation.mykafetarea.entities.LunchItem;
 public interface LunchItemService {
 	
 	/**
-	 * <p> Save lunch item to DB</p>
+	 *<p> Save lunch item to Data Base <p/>
 	 * 
 	 *@param dto
 	 *			 Dto populate the new lunchitem with
