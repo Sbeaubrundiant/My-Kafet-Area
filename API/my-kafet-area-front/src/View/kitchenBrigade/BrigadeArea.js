@@ -23,7 +23,7 @@ export default function Brigadearea() {
              </div>
              <div>
                 <Button variant="primary" type="submit" id="goToCulinaryProposition" onClick={handleClick}>
-            Culinary Proposition
+            Create lunch items
                  </Button>
               </div>
 

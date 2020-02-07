@@ -5,31 +5,28 @@ import { useHistory} from 'react-router-dom';
 import Button from 'react-bootstrap/Button';
 import { Formik } from 'formik';
 import { resetForm } from 'react';
+import { Form } from 'react-bootstrap'
 
 export default function CulinaryProposition() {
 
     // Rappel de la page précédente 
     let history = useHistory();
-        function handleClick() {
-          history.push("/Brigadearea");
-        }
-    
-      
-    
-        
+
+    function handleClick() {
+      history.push("/Brigadearea");
+    }
+
     return(
         <div id="App">
             <SideBar pageWrapId={"page-wrap"} outerContainerId={"App"} />
             <div id="page-wrap">
                 <h1 id="Pick-up-line">
-                Propositions Area
+                Lunch items creation
                 </h1>
-                
+              <div>
         <div>
-                
-  <div>
     
-    <Formik
+    <Form
       initialValues={{ Name: '' }, { Description: '' }, { Allergens: '' }, { price: '' }}
       onSubmit={(values, actions) => {
         setTimeout(() => {
@@ -93,7 +90,7 @@ export default function CulinaryProposition() {
           <input
             id="formField"
             type="text"
-            placeholder="Write a culinary proposition name"
+            placeholder="Write a lunch item name"
             onChange={props.handleChange}
             onBlur={props.handleBlur}
             value={props.values.name}
@@ -135,7 +132,27 @@ export default function CulinaryProposition() {
 
         </form>
       )}
-    </Formik>
+    </Form>
+    <Form>
+  <Form.Group controlId="formBasicEmail">
+    <Form.Label>Email address</Form.Label>
+    <Form.Control type="email" placeholder="Enter email" />
+    <Form.Text className="text-muted">
+      We'll never share your email with anyone else.
+    </Form.Text>
+  </Form.Group>
+
+  <Form.Group controlId="formBasicPassword">
+    <Form.Label>Password</Form.Label>
+    <Form.Control type="password" placeholder="Password" />
+  </Form.Group>
+  <Form.Group controlId="formBasicCheckbox">
+    <Form.Check type="checkbox" label="Check me out" />
+  </Form.Group>
+  <Button variant="primary" type="submit">
+    Submit
+  </Button>
+</Form>
   </div>
 
     </div>
