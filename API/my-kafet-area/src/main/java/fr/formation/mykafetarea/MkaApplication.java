@@ -16,7 +16,7 @@ public class MkaApplication {
 	
 	
 	@Bean
-	protected ModelMapper ModelMapper() {
+	protected ModelMapper modelMapper() {
 		 return new ModelMapper();
 		
 	}

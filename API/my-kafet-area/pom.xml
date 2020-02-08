@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>fr.formation</groupId>
 	<artifactId>my-kafet-area</artifactId>
-	<version>0.0.2-SNAPSHOT</version>
+	<version>0.0.3-SNAPSHOT</version>
 	<name>my-kafet-area</name>
 	<description>Bring the food pleasur to you...</description>
 

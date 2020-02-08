@@ -27,10 +27,11 @@ public class LunchItemCreateDto {
 	@Positive
 	private Double price;
 
-	/**
-	 * Default Constructor no args
-	 */
+	
 	public LunchItemCreateDto() {
+		/**
+		 * Default Constructor no args
+		 */
 		
 	}
 
