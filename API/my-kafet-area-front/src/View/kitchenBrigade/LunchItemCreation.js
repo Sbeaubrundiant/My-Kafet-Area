@@ -7,7 +7,7 @@ import { Formik } from 'formik';
 import { resetForm } from 'react';
 import { Form } from 'react-bootstrap'
 
-export default function CulinaryProposition() {
+export default function LunchItemCreation() {
 
     // Rappel de la page précédente 
     let history = useHistory();

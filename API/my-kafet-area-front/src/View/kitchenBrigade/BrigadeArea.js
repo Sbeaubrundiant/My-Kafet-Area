@@ -3,13 +3,13 @@ import '../../App.css';
 import SideBar from "../../Components/SideBar/SideBar.js";
 import Button from 'react-bootstrap/Button';
 import { useHistory} from 'react-router-dom';
-import CulinaryProposition from './CulinaryProposition';
+import LunchItemCreation from './LunchItemCreationn';
 
 export default function Brigadearea() {
-// Redirect to culinaryproposition page on the button click
+// Redirect to LunchItemCreation page on the button click
     let history = useHistory();
         function handleClick() {
-          history.push("/CulinaryProposition");
+          history.push("/LunchItemCreation");
         }
 
     return(
@@ -22,7 +22,7 @@ export default function Brigadearea() {
                 </h1>
              </div>
              <div>
-                <Button variant="primary" type="submit" id="goToCulinaryProposition" onClick={handleClick}>
+                <Button variant="primary" type="submit" id="goToLunchItemCreation" onClick={handleClick}>
             Create lunch items
                  </Button>
               </div>

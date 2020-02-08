@@ -8,7 +8,7 @@ import Starters from "./Collaborator/Starters.js";
 import Dishes from "./Collaborator/Dishes.js";
 import ForgottenPassword from "./Login/ForgottenPassword";
 import Desserts from "./Collaborator/Desserts.js";
-import CulinaryProposition from "./kitchenBrigade/CulinaryProposition.js";
+import LunchItemCreation from "./kitchenBrigade/LunchItemCreation.js";
 import BrigadeArea from "./kitchenBrigade/BrigadeArea.js";
 
 export default function AppRouter() {
@@ -21,7 +21,7 @@ export default function AppRouter() {
       <Route exact path="/dishes" component={props => <Dishes {...props} />} />
       <Route exact path="/desserts" component={props => <Desserts {...props}/>} />
       <Route exact path="/forgottenpassword" component={props => <ForgottenPassword {...props} />} />
-      <Route exact path="/culinaryproposition" component={props => <CulinaryProposition {...props} />} />
+      <Route exact path="/LunchItemCreation" component={props => <LunchItemCreation {...props} />} />
       <Route exact path="/brigadearea" component={props => <BrigadeArea {...props} />} />
           </Router>
   );
