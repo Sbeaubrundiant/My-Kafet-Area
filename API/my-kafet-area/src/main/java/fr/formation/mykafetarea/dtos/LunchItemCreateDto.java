@@ -26,6 +26,9 @@ public class LunchItemCreateDto {
 	@NotNull
 	@Positive
 	private Double price;
+	
+	@NotBlank
+	private Boolean reservable;
 
 	
 	public LunchItemCreateDto() {

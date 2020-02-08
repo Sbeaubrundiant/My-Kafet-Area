@@ -34,6 +34,9 @@ public class LunchItem {
 	
 	@Column(nullable = false)
 	private Double price;
+	
+	@Column(nullable = false)
+	private Boolean reservable;
 
 	/**
 	 * Default constructor no args
