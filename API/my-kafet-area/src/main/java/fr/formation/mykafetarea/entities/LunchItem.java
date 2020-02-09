@@ -34,6 +34,9 @@ public class LunchItem {
 	
 	@Column(nullable = false)
 	private Double price;
+	
+	@Column(nullable = true)
+	private Boolean reservable;
 
 	/**
 	 * Default constructor no args
@@ -48,14 +51,16 @@ public class LunchItem {
 	 * @param description
 	 * @param allergens
 	 * @param price
+	 * @Param reservable
 	 */
-	public LunchItem(Long id, String type, String name, String description, String allergens, Double price) {
+	public LunchItem(Long id, String type, String name, String description, String allergens, Double price, Boolean reservable) {
 		this.id = id;
 		this.type = type;
 		this.name = name;
 		this.description = description;
 		this.allergens = allergens;
 		this.price = price;
+		this.reservable = reservable;
 	}
 
 	/**
@@ -148,11 +153,28 @@ public class LunchItem {
 		this.description = description;
 	}
 
+	/**
+	 * @return the reservable
+	 */
+	public Boolean getReservable() {
+		return reservable;
+	}
+
+	/**
+	 * @param reservable the reservable to set
+	 */
+	public void setReservable(Boolean reservable) {
+		this.reservable = reservable;
+	}
 	@Override
 	public String toString() {
-		return "LunchItem [id=" + id + ", type=" + type + ", name=" + name + ", allergens=" + allergens + ", price="
-				+ price + "]";
+		return "LunchItem [id=" + id + ", type=" + type + ", name=" + name + ", description=" + description
+				+ ", allergens=" + allergens + ", price=" + price + ", reservable=" + reservable + "]";
 	}
+
+	
+
+	
 
 	
 	

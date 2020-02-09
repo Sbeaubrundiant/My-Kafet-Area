@@ -1,34 +1,33 @@
 package fr.formation.mykafetarea.dtos;
 
-import javax.validation.constraints.NotBlank;
-import javax.validation.constraints.NotNull;
-import javax.validation.constraints.Positive;
-import javax.validation.constraints.Size;
 
-public class LunchItemCreateDto {
+import javax.validation.constraints.Positive;
+import jdk.jfr.BooleanFlag;
+
+public class LunchItemDto {
 	
-	@NotBlank
-	@Size(max = 65, message = "{E_MAX_LENGTH_EXCEEDED}")
 	private String type;
 	
-	@NotBlank
-	@Size(max = 65, message = "{E_MAX_LENGTH_EXCEEDED}" )
+	
 	private String name;
 	
-	@NotBlank
-	@Size(max = 400, message = "{E_MAX_LENGTH_EXCEEDED}")
+	
 	private String description;
 	
-	@NotBlank
-	@Size(max = 80, message = "{E_MAX_LENGTH_EXCEEDED}")
+	
 	private String allergens;
 	
-	@NotNull
+	
 	@Positive
 	private Double price;
+	
+	@BooleanFlag
+	private Boolean reservable;
 
 	
-	public LunchItemCreateDto() {
+	
+
+	public LunchItemDto() {
 		/**
 		 * Default Constructor no args
 		 */
@@ -104,12 +103,27 @@ public class LunchItemCreateDto {
 	public void setPrice(Double price) {
 		this.price = price;
 	}
+	/**
+	 * @return the reservable
+	 */
+	public Boolean getReservable() {
+		return reservable;
+	}
+
+	/**
+	 * @param reservable the reservable to set
+	 */
+	public void setReservable(Boolean reservable) {
+		this.reservable = reservable;
+	}
 
 	@Override
 	public String toString() {
 		return "LunchItemCreateDto [type=" + type + ", name=" + name + ", description=" + description + ", allergens="
-				+ allergens + ", price=" + price + "]";
+				+ allergens + ", price=" + price + ", reservable=" + reservable + "]";
 	}
+
+	
 
 	
 	
