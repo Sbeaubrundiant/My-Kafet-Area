@@ -38,10 +38,11 @@ public class LunchItem {
 	@Column(nullable = true)
 	private Boolean reservable;
 
-	/**
-	 * Default constructor no args
-	 */
+	
+	  
+	 
 	public LunchItem() {
+		//Default constructor no args
 	}
 
 	/**
@@ -166,6 +167,12 @@ public class LunchItem {
 	public void setReservable(Boolean reservable) {
 		this.reservable = reservable;
 	}
+
+    /**
+     * Returns a string representation of this {@code lunchItem}.
+     *
+     * @return a string representation of this {@code lunchItem}
+     */
 	@Override
 	public String toString() {
 		return "LunchItem [id=" + id + ", type=" + type + ", name=" + name + ", description=" + description
