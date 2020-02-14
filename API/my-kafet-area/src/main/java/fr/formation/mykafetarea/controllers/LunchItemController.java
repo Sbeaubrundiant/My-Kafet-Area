@@ -28,7 +28,7 @@ public class LunchItemController {
 	 /**
      * Endpoint to create starters with given inputs.
      *
-     * ' @param dto ' represents the inputs related to starter to create
+     * ' @param dto ' represents the inputs related to lunch item to create
      * 
      */
 	 
@@ -38,22 +38,12 @@ public class LunchItemController {
 	 }
 	 
 	 /**
-	     * Endpoint to retrieve the informations of all starters .
+	     * Endpoint to retrieve the informations of all lunch items .
 	     *
-	     * @return the informations of all saved starters
+	     * @return the informations of all saved lunch items
 	     */
 	 
-	 	
-
-//		@GetMapping("/all")
-//		ResponseEntity<List<LunchItemCreateDto>> findAll() {
-//			List<LunchItemCreateDto> item = lunchItemService.findAll();
-//			return new ResponseEntity<>(item, HttpStatus.OK);
-//				
-//			
-//		}
-		
-	 
+	 	 
 	 	@GetMapping("/all")
 	 	protected List<LunchItemDto> list() {
 	 		return lunchItemService.findAll();
@@ -61,7 +51,11 @@ public class LunchItemController {
 	 	
 	 	
 	 	
-	 	
+	 	/**
+	     * Endpoint to retrieve the informations of available lunch items .
+	     *
+	     * @return the informations of all saved lunch items
+	     */
 	 	
 		@GetMapping("/{reservable}")
 		protected List<LunchItemDto> findByReservable(@PathVariable Boolean reservable) {
