@@ -8,7 +8,7 @@ import Starters from "./Collaborator/Starters.js";
 import Dishes from "./Collaborator/Dishes.js";
 import ForgottenPassword from "./Login/ForgottenPassword";
 import Desserts from "./Collaborator/Desserts.js";
-import LunchItemCreation from "./kitchenBrigade/LunchItemCreation.js";
+import LunchItemCreation from "./kitchenBrigade/LunchItemCreation.jsx";
 import BrigadeArea from "./kitchenBrigade/BrigadeArea.js";
 
 export default function AppRouter() {

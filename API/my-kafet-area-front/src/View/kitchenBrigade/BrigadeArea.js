@@ -3,7 +3,7 @@ import '../../App.css';
 import SideBar from "../../Components/SideBar/SideBar.js";
 import Button from 'react-bootstrap/Button';
 import { useHistory} from 'react-router-dom';
-import LunchItemCreation from './LunchItemCreationn';
+import LunchItemCreation from './LunchItemCreation';
 
 export default function Brigadearea() {
 // Redirect to LunchItemCreation page on the button click
