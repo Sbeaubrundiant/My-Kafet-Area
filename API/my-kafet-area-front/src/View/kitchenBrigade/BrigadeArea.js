@@ -3,13 +3,16 @@ import '../../App.css';
 import SideBar from "../../Components/SideBar/SideBar.js";
 import Button from 'react-bootstrap/Button';
 import { useHistory} from 'react-router-dom';
-import LunchItemCreation from './LunchItemCreation';
+
 
 export default function Brigadearea() {
 // Redirect to LunchItemCreation page on the button click
     let history = useHistory();
-        function handleClick() {
-          history.push("/LunchItemCreation");
+        function handleClickCreation() {
+          history.push("/LunchItemCreate");
+        }
+        function handleClickListItems() {
+          history.push("/alllunchitems");
         }
 
     return(
@@ -22,9 +25,13 @@ export default function Brigadearea() {
                 </h1>
              </div>
              <div>
-                <Button variant="primary" type="submit" id="goToLunchItemCreation" onClick={handleClick}>
+                <Button variant="primary" type="button" id="goToLunchItemCreation" onClick={handleClickCreation}>
             Create lunch items
                  </Button>
+                 <Button variant="primary" type="button" id="goToLunchItemlist" onClick={handleClickListItems}>
+            Retrieve all lunch items
+                 </Button>
+
               </div>
 
      </div>

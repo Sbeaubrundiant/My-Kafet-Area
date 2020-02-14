@@ -3,11 +3,19 @@ import SideBar from "../../Components/SideBar/SideBar";
 import '../../App.css';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
+import { useHistory} from 'react-router-dom';
 
 
 export default function ForgottenPassword() {
+
+  let history = useHistory();
+    function handleClick() {
+      history.push("/");
+    }
+
+
   return (
-    <div id="App">
+        <div id="App">
       <SideBar pageWrapId={"page-wrap"} outerContainerId={"App"} />
       <div id="page-wrap">
         <h1>
@@ -30,6 +38,11 @@ export default function ForgottenPassword() {
         </Button>
 
       </Form>
+      </div>
+      <div>
+        <button variant="primary" type="button" id="backToLoginPage"  onClick={handleClick}>
+          Back to login page
+        </button>
       </div>
 </div>
   )

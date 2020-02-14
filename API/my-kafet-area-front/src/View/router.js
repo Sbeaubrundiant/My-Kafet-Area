@@ -1,14 +1,13 @@
 import React from "react";
 import "../App.css";
 import LoginPage from "./Login/LoginPage.js";
-import HomeCollaborator from "./Collaborator/HomeCollaborator.js";
+import CollaborArea from "./Collaborator/CollaborArea";
 import SideBar from "../Components/SideBar/SideBar.js";
 import { BrowserRouter as Router, Route } from "react-router-dom";
-import Starters from "./Collaborator/Starters.js";
-import Dishes from "./Collaborator/Dishes.js";
 import ForgottenPassword from "./Login/ForgottenPassword";
-import Desserts from "./Collaborator/Desserts.js";
-import LunchItemCreation from "./kitchenBrigade/LunchItemCreation.jsx";
+import ReservableItems from "./Collaborator/ReservableLunchItem";
+import AllLunchItemsBrigade from "./kitchenBrigade/AllLunchItemsBrigade";
+import LunchItemCreate from "./kitchenBrigade/LunchItemCreate";
 import BrigadeArea from "./kitchenBrigade/BrigadeArea.js";
 
 export default function AppRouter() {
@@ -16,13 +15,12 @@ export default function AppRouter() {
     <Router>
       <SideBar />
       <Route exact path="/" component={props => <LoginPage {...props} />} />
-      <Route exact path="/homecollaborator" component={props => <HomeCollaborator {...props} />} />
-      <Route exact path="/starters" component={props => <Starters {...props} />} />
-      <Route exact path="/dishes" component={props => <Dishes {...props} />} />
-      <Route exact path="/desserts" component={props => <Desserts {...props}/>} />
       <Route exact path="/forgottenpassword" component={props => <ForgottenPassword {...props} />} />
-      <Route exact path="/LunchItemCreation" component={props => <LunchItemCreation {...props} />} />
+      <Route exact path="/LunchItemCreate" component={props => <LunchItemCreate {...props} />} />
       <Route exact path="/brigadearea" component={props => <BrigadeArea {...props} />} />
+      <Route exact path="/alllunchitems" component={props => <AllLunchItemsBrigade {...props} />} />
+      <Route exact path="/collaboratorarea" component={props => <CollaborArea {...props} />} />
+      <Route exact path="/reservableitems" component={props => <ReservableItems {...props} />} />
           </Router>
   );
 }

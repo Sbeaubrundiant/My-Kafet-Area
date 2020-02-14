@@ -30,10 +30,7 @@ body {
   font-size: 3vw;
   font-family: cursive;
   color: rgb(64, 12, 80);
-  margin-bottom: 15px;
-  margin-left: 45px;
-  margin-right: 15px;
-  padding-left: 5vw;
+  display: flex;
 }
 
 /* Individual item */
@@ -141,21 +138,13 @@ a.bm-item.menu-item img {
 }
 
 #homeSubmitButton,
-#homeForgotPassword{
+#homeForgotPassword,
+#brigadeArea,
+#collaboratorArea{
   text-align: center;
   width: 30%;
   margin-left: 35%;
   margin-right: 35%;
-  margin-bottom: 2px;
-  color: black;
-  background-color: #b30000;
-}
-#goToCulinaryProposition {
-  text-align: center;
-  width: 30%;
-  margin-left: 35%;
-  margin-right: 35%;
-  margin-top: 10%;
   margin-bottom: 2px;
   color: black;
   background-color: #b30000;
@@ -229,23 +218,42 @@ font-size: 6vw;
   flex-grow: 1;
 }
 
-/*Culinary Form proposition**/
+/*Lunch items creation form**/
 #formField{
-  display: list-item;
+  
   padding: 20px 20px;
   width: 80%;
-  margin-left: 15%;
-  margin-right: 5%; 
-  margin-bottom: 3%;
-  margin-top: 3%;
-  border: solid;
- 
- 
+   border: solid;
+  border-radius: 4px;
+  margin-bottom: 2%;
 }
 
+.radioGroup{
+border-bottom-color: crimson;
+ 
+
+}
 #resetPropositionForm,
 #createPropositionButton, 
-#backToBrigadeButton {
+#backToBrigadeButton,
+#goToLunchItemCreation,
+#goToReservableItems,
+#backToLoginPage,
+#goToLunchItemlist,
+#goToBrigadeArea,
+#validLunchBag,
+#goToCollaborartorArea {
+  text-align: center;
+  width: 30%;
+  margin-left: 35%;
+  margin-right: 35%;
+  margin-bottom: 2px;
+  color: black;
+  background-color: #b30000;
+  border-radius: 0.25rem;
+}
+
+#goToCollaboratorArea{
   text-align: center;
   width: 30%;
   margin-left: 35%;
@@ -264,3 +272,23 @@ margin-left: 10vmin;
 margin-bottom: 2px;
 padding: 2%;
 }
+
+#titleRadio{
+
+ 
+ margin-right: 2%;
+ margin-left: 2%;
+ display: inline;
+}
+
+#radioGroup{
+  color: rgb(51, 4, 20);
+  font-stretch: extra-expanded;
+  border-color: #000000f6;
+  border-radius: 0.25rem;
+  margin-bottom: 2%;
+  margin: 2%;
+  
+
+}
+

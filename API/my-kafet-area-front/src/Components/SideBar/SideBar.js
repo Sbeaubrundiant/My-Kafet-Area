@@ -1,10 +1,6 @@
 import React from "react";
 import '../../App.css'
 import { slide as Menu } from "react-burger-menu";
-import salad from './Assets/salad.jpg';
-import dishe from './Assets/dishe.png';
-import dessert from './Assets/dessert.png';
-import drink from './Assets/drink.png';
 import account from './Assets/account.png';
 
 

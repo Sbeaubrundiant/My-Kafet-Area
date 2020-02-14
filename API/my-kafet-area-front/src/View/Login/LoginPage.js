@@ -10,9 +10,18 @@ import { useHistory } from "react-router-dom";
 export default function LoginPage() {
   // function push vers url et mon onclick appel la fonction push
   let history = useHistory();
-  function handleClick() {
+  function handleClickForgotPass() {
     history.push("/forgottenPassword");
   }
+  function handleClickBrigade(){ 
+    history.push("/brigadearea");}
+    function handleClickCollaborator(){
+    history.push("/collaboratorarea");}
+      
+   
+   
+      
+
 
   return (
     <div id="App">
@@ -37,8 +46,14 @@ export default function LoginPage() {
           <Button variant="primary" type="submit" id="homeSubmitButton">
             Login
           </Button>
-          <Button variant="primary" type="button" id="homeForgotPassword" onClick={handleClick}>
+          <Button variant="primary" type="button" id="homeForgotPassword" onClick={handleClickForgotPass}>
             Forgotten Password
+          </Button>
+          <Button variant="primary" type="button" id="brigadeArea" onClick={handleClickBrigade}>
+            to brigade area---->
+          </Button>
+          <Button variant="primary" type="button" id="collaboratorArea" onClick={handleClickCollaborator}>
+            to collaborator area---->
           </Button>
         </Form>
       </div>
