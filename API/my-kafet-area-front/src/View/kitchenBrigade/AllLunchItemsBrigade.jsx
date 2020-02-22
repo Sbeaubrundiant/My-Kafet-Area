@@ -1,4 +1,4 @@
-import React,{ useState } from 'react';
+import React,{ useState , useEffect } from 'react';
 import SideBar from "../../Components/SideBar/SideBar";
 import LunchItemDataService from "../../service/LunchItemDataService";
 import '../../App.css';
@@ -6,20 +6,25 @@ import Button from 'react-bootstrap/Button';
 import { useHistory} from 'react-router-dom';
 
 export default function AllLunchItems()  {
-    
         let history = useHistory();
+        
         function handleClick() {
           history.push("/brigadearea");
         }
 
         const [lunchItems, setLunchItems] = useState({ lunchItems: [] });
-        LunchItemDataService.retrieveAllLunchItems(AllLunchItems)
+
+        useEffect(()=>{
+            LunchItemDataService.retrieveAllLunchItems(AllLunchItems)
         .then(
             response => {
                 console.log(response);
                 setLunchItems( { lunchItems : response.data})
             }
         )
+
+        }, [])
+        
 
         
         return(

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState , useEffect } from "react";
 import LunchItemDataService from "../../service/LunchItemDataService";
 import SideBar from "../../Components/SideBar/SideBar";
 import Button from 'react-bootstrap/Button';
@@ -17,6 +17,8 @@ export default function ReservableLunchItem() {
     }
 
     const [lunchItems, setLunchItems] = useState({ lunchItems: [] });
+
+    useEffect(()=>{
         LunchItemDataService.retrieveReservableLunchItems(ReservableLunchItem)
         .then(
             response => {
@@ -24,6 +26,9 @@ export default function ReservableLunchItem() {
                 setLunchItems( { lunchItems : response.data})
             }
         )
+        
+    },[])
+       
     
    
         return (

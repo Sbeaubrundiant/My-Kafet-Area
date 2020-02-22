@@ -2,8 +2,10 @@ import React from 'react';
 import '../../App.css';
 import SideBar from "../../Components/SideBar/SideBar.js";
 import { useHistory} from 'react-router-dom';
-import { Button , ButtonGroup, ToggleButton } from 'react-bootstrap';
+import { Button } from 'react-bootstrap';
 import { Formik } from 'formik';  
+import { Radio , Checkbox  } from 'react-formik-ui'; 
+import axios from 'axios'; 
 
 export default function LunchItemCreate() {
   let history = useHistory();
@@ -31,11 +33,24 @@ export default function LunchItemCreate() {
           <div>
     
     <Formik
-      initialValues={{ Type: '' }, { Name: '' }, { Description: '' }, { Allergens: '' }, { price: '' }}
-      onSubmit={(values, setValues) => {
+      initialValues={{ type: ''  ,  name: '' ,  description: '' ,  allergens: '' ,  price: '' , reservable: false }}
+      onSubmit={(values) => {
         setTimeout(() => {
+          axios({
+            method: 'post', 
+            url: 'http://localhost:8082/reac/lunchitems',
+            data: {
+              type: values.type,
+              name: values.name,
+              description: values.description,
+              allergens: values.allergens,
+              price:  values.price,
+              reservable: values.reservable
+            }
+
+          })
           alert(JSON.stringify(values, null, 2));
-          setValues.setSubmitting(false);
+          //setValues.setSubmitting(false);
         }, 1000);
       }}
     >
@@ -43,21 +58,24 @@ export default function LunchItemCreate() {
         <form onSubmit={props.handleSubmit} onReset={props.handleReset}>
           <div>
           
-          <ButtonGroup toggle className="radioGroup">
-    <ToggleButton id="radioGroup" variant="outline-primary" type="radio" name="radio" defaultChecked value={props.values.type}>
-      Starter
-    </ToggleButton>
-    <ToggleButton id="radioGroup" variant="outline-primary" type="radio" name="radio" value={props.values.main_dish}>
-      Main dish
-    </ToggleButton>
-    <ToggleButton id="radioGroup" variant="outline-primary" type="radio" name="radio" value={props.values.dessert}>
-      Dessert
-    </ToggleButton>
-    <ToggleButton id="radioGroup" variant="outline-primary" type="radio" name="radio" value={props.values.drink}> 
-      Drink
-    </ToggleButton>
-    </ButtonGroup>
-          
+        <Radio
+      inline
+            id="radioGroup"
+            type="radio"
+            label="Type"
+            name="type"
+            options={[
+              {value : 'starter' , label : 'Starter'},
+              {value : 'main dish' , label : 'main_dish'},
+              {value : 'dessert' , label : 'dessert'},
+              {value : 'drink' , label : 'drink'}
+
+            ]}
+            onChange={props.handleChange}
+            onBlur={props.handleBlur}
+            value={props.values.type}
+            
+          />
           </div>
           <div>
           <input
@@ -96,6 +114,14 @@ export default function LunchItemCreate() {
             value={props.values.price}
             name="price"
           />
+          <Checkbox
+      name='reservable'
+      label='reservable'
+      text='Available to reservation'
+      
+    />
+
+
           </div>
 
           {props.errors.name && <div id="feedback">{props.errors.name}</div>}
@@ -108,6 +134,7 @@ export default function LunchItemCreate() {
             <Button variant="primary" type="submit" id="backToBrigadeButton" onClick={handleClick}>
             Back to Brigade Area
                  </Button>
+
         </form>
       )}
     </Formik>
