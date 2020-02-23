@@ -28,7 +28,7 @@ export default function LoginPage() {
       <SideBar pageWrapId={"page-wrap"} outerContainerId={"App"} />
       <div id="page-wrap">
         <h1>
-          <img src={MKALogo} alt="LOGO" />
+          <img id="mkalogo" src={MKALogo} alt="LOGO" />
         </h1>
         <h2 id="Pick-up-line">Your optimised canteen way...</h2>
       </div>

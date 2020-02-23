@@ -289,6 +289,10 @@ padding: 2%;
   margin-bottom: 2%;
   margin: 2%;
   
-
+}
+#mkalogo{
+  max-width:40%;
+    height:auto;
+    padding-top: 5%;
 }
 
