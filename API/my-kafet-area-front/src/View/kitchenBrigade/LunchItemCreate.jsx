@@ -1,8 +1,7 @@
 import React from 'react';
 import '../../App.css';
-import SideBar from "../../Components/SideBar/SideBar.js";
 import { useHistory} from 'react-router-dom';
-import { Button } from 'react-bootstrap';
+import { Button, Navbar } from 'react-bootstrap';
 import { Formik } from 'formik';  
 import { Radio , Checkbox  } from 'react-formik-ui'; 
 import axios from 'axios'; 
@@ -18,7 +17,7 @@ export default function LunchItemCreate() {
           
     return(
         <div id="App">
-            <SideBar pageWrapId={"page-wrap"} outerContainerId={"App"} />
+            <Navbar pageWrapId={"page-wrap"} outerContainerId={"App"} />
           <div id="page-wrap">
               <div>
                 <h1 id="Pick-up-line">

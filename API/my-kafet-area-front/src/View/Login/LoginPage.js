@@ -1,6 +1,6 @@
 import React from "react";
 import "../../App.css";
-import SideBar from "../../Components/SideBar/SideBar.js";
+import NavBar from "../../Components/NavBar/NavBar";
 import MKALogo from "./MKALogo.png";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
@@ -17,15 +17,10 @@ export default function LoginPage() {
     history.push("/brigadearea");}
     function handleClickCollaborator(){
     history.push("/collaboratorarea");}
-      
-   
-   
-      
-
-
+ 
   return (
     <div id="App">
-      <SideBar pageWrapId={"page-wrap"} outerContainerId={"App"} />
+      
       <div id="page-wrap">
         
           <img id="mkalogo" src={MKALogo} alt="LOGO" />

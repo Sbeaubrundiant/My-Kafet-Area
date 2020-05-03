@@ -1,8 +1,8 @@
 import React, { useState , useEffect } from "react";
 import LunchItemDataService from "../../service/LunchItemDataService";
-import SideBar from "../../Components/SideBar/SideBar";
 import Button from 'react-bootstrap/Button';
 import { useHistory} from 'react-router-dom';
+import Navbar from '../../Components/NavBar/NavBar';
 
 
 
@@ -33,7 +33,7 @@ export default function ReservableLunchItem() {
    
         return (
             <div id="App">
-            <SideBar pageWrapId={"page-wrap"} outerContainerId={"App"} />
+            <Navbar pageWrapId={"page-wrap"} outerContainerId={"App"} />
             <div id="page-wrap">
                 <h1 id="Pick-up-line">
                    Compose your lunch bag

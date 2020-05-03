@@ -1,7 +1,7 @@
 import React from 'react';
 import '../../App.css';
-import SideBar from "../../Components/SideBar/SideBar.js";
 import Button from 'react-bootstrap/Button';
+import Navbar from 'react-bootstrap/Navbar';
 import { useHistory} from 'react-router-dom';
 
 
@@ -18,7 +18,7 @@ export default function Brigadearea() {
     return(
         
     <div id="App">
-            <SideBar pageWrapId={"page-wrap"} outerContainerId={"App"} />
+            <Navbar pageWrapId={"page-wrap"} outerContainerId={"App"} />
             <div id="page-wrap">
                 <h1 id="Pick-up-line">
                    Brigade Area

@@ -1,9 +1,9 @@
 import React from 'react';
-import SideBar from "../../Components/SideBar/SideBar";
 import '../../App.css';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 import { useHistory} from 'react-router-dom';
+import { Navbar } from 'react-bootstrap';
 
 
 export default function ForgottenPassword() {
@@ -16,12 +16,12 @@ export default function ForgottenPassword() {
 
   return (
         <div id="App">
-      <SideBar pageWrapId={"page-wrap"} outerContainerId={"App"} />
+      <Navbar pageWrapId={"page-wrap"} outerContainerId={"App"} />
       <div id="page-wrap">
         <h1>
-
+          
         </h1>
-        <h2 id="Pick-up-line">Fill in with your registration email </h2>
+        <h2 id="Pick-up-line">Fill in with your registration email</h2>
       </div>
       <div>
       <Form>

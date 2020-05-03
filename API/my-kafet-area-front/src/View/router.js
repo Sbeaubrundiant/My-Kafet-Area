@@ -2,8 +2,8 @@ import React from "react";
 import "../App.css";
 import LoginPage from "./Login/LoginPage.js";
 import CollaborArea from "./Collaborator/CollaborArea";
-import SideBar from "../Components/SideBar/SideBar.js";
-import { BrowserRouter as Router, Route } from "react-router-dom";
+import NavBar from "../Components/NavBar/NavBar";
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import ForgottenPassword from "./Login/ForgottenPassword";
 import ReservableItems from "./Collaborator/ReservableLunchItem";
 import AllLunchItemsBrigade from "./kitchenBrigade/AllLunchItemsBrigade";
@@ -13,7 +13,7 @@ import BrigadeArea from "./kitchenBrigade/BrigadeArea.js";
 export default function AppRouter() {
   return (
     <Router>
-      <SideBar />
+      <NavBar />
       <Route exact path="/" component={props => <LoginPage {...props} />} />
       <Route exact path="/forgottenpassword" component={props => <ForgottenPassword {...props} />} />
       <Route exact path="/LunchItemCreate" component={props => <LunchItemCreate {...props} />} />

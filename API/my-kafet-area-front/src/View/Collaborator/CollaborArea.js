@@ -1,9 +1,9 @@
 import React from 'react';
 import '../../App.css';
-import SideBar from "../../Components/SideBar/SideBar.js";
 import bonapp from "../../Components/View/bonapp.png";
 import Button from 'react-bootstrap/Button';
 import { useHistory} from 'react-router-dom';
+import Navbar from 'react-bootstrap/Navbar';
 
 export default function CollaborArea() {
     let history = useHistory();
@@ -12,7 +12,7 @@ export default function CollaborArea() {
     }
     return(
         <div id="App">
-            <SideBar pageWrapId={"page-wrap"} outerContainerId={"App"} />
+            <Navbar pageWrapId={"page-wrap"} outerContainerId={"App"} />
             <div id="page-wrap">
                 <h1 id="Pick-up-line">
                      Collaborator Area

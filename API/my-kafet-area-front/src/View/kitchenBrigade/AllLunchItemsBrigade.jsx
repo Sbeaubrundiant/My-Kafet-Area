@@ -1,9 +1,9 @@
 import React,{ useState , useEffect } from 'react';
-import SideBar from "../../Components/SideBar/SideBar";
 import LunchItemDataService from "../../service/LunchItemDataService";
 import '../../App.css';
 import Button from 'react-bootstrap/Button';
 import { useHistory} from 'react-router-dom';
+import { Navbar } from 'react-bootstrap';
 
 export default function AllLunchItems()  {
         let history = useHistory();
@@ -29,7 +29,7 @@ export default function AllLunchItems()  {
         
         return(
             <div id="App">
-                <SideBar pageWrapId={"page-wrap"} outerContainerId={"App"} />
+                <Navbar pageWrapId={"page-wrap"} outerContainerId={"App"} />
                 <div id="page-wrap">
                     <h1 id="Pick-up-line">
                          All Lunch Items
