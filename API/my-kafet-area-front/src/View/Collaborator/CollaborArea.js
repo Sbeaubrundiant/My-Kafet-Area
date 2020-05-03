@@ -4,6 +4,7 @@ import bonapp from "../../Components/View/bonapp.png";
 import Button from 'react-bootstrap/Button';
 import { useHistory} from 'react-router-dom';
 import Navbar from 'react-bootstrap/Navbar';
+import BootstrapTable from 'react-bootstrap-table-next';
 
 export default function CollaborArea() {
     let history = useHistory();
@@ -26,8 +27,10 @@ export default function CollaborArea() {
              <Button variant="primary" type="button" id="goToReservableItems" onClick={handleClick} >
                  Compose your lunch bag
                  </Button>
+                 
         </div>      
             </div>
 
     )
+    
 }
