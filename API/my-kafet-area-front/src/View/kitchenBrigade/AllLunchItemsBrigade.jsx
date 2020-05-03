@@ -3,7 +3,7 @@ import LunchItemDataService from "../../service/LunchItemDataService";
 import '../../App.css';
 import Button from 'react-bootstrap/Button';
 import { useHistory} from 'react-router-dom';
-import { Navbar } from 'react-bootstrap';
+import { Navbar, Table } from 'react-bootstrap';
 
 export default function AllLunchItems()  {
         let history = useHistory();
@@ -37,7 +37,7 @@ export default function AllLunchItems()  {
                     
                 </div>
                 <div>
-                <table   className="table">
+                <Table responsive="lg"  className="table">
                       <thead>
                         <tr>
                             <th>Type</th>
@@ -61,13 +61,9 @@ export default function AllLunchItems()  {
                                 )
                         }
                         </tbody>
-                    </table>
+                    </Table>
                 </div>
-                <div>
-                 <Button variant="primary" type="button" id="goToBrigadeArea" onClick={handleClick} >
-                     Brigade Area
-                     </Button>
-            </div>      
+                     
                 </div>
     
         )

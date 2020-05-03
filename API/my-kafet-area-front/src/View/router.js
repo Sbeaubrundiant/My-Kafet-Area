@@ -14,13 +14,13 @@ export default function AppRouter() {
   return (
     <Router>
       <NavBar />
-      <Route exact path="/" component={props => <LoginPage {...props} />} />
-      <Route exact path="/forgottenpassword" component={props => <ForgottenPassword {...props} />} />
-      <Route exact path="/LunchItemCreate" component={props => <LunchItemCreate {...props} />} />
-      <Route exact path="/brigadearea" component={props => <BrigadeArea {...props} />} />
-      <Route exact path="/alllunchitems" component={props => <AllLunchItemsBrigade {...props} />} />
-      <Route exact path="/collaboratorarea" component={props => <CollaborArea {...props} />} />
-      <Route exact path="/reservableitems" component={props => <ReservableItems {...props} />} />
+      <Route exact path="/" component = { LoginPage } />
+      <Route exact path="/forgottenpassword" component = { ForgottenPassword } />
+      <Route exact path="/LunchItemCreate" component = { LunchItemCreate } />
+      <Route exact path="/brigadearea" component = { AllLunchItemsBrigade } />
+      <Route exact path="/alllunchitems" component= { AllLunchItemsBrigade } />
+      <Route exact path="/collaboratorarea" component={CollaborArea} />
+      <Route exact path="/reservableitems" component={ReservableItems} />
           </Router>
   );
 }

@@ -44,12 +44,6 @@ export default function LoginPage() {
           <Button variant="primary" type="button" id="homeForgotPassword" onClick={handleClickForgotPass}>
             Forgotten Password
           </Button>
-          <Button variant="primary" type="button" id="brigadeArea" onClick={handleClickBrigade}>
-            to brigade area---->
-          </Button>
-          <Button variant="primary" type="button" id="collaboratorArea" onClick={handleClickCollaborator}>
-            to collaborator area---->
-          </Button>
         </Form>
       </div>
     </div>

@@ -33,7 +33,7 @@ export default function ReservableLunchItem() {
    
         return (
             <div id="App">
-            <Navbar pageWrapId={"page-wrap"} outerContainerId={"App"} />
+            
             <div id="page-wrap">
                 <h1 id="Pick-up-line">
                    Compose your lunch bag

@@ -159,7 +159,7 @@ a.bm-item.menu-item img {
   font-stretch: wider;
   
   background-color: lightgrey;
-  border: 2px solid rgba(0, 89, 255, 0.623);
+  border: 2px solid rgba(179, 187, 204, 0.743);
   border-radius: 5px;
   
 }
@@ -184,7 +184,7 @@ a.bm-item.menu-item img {
   transition: opacity 1.2s ease-in-out;
   z-index: 10;
   width: 100%;
-  background: blue;
+  
   height: 100%;
 }
 .dropdown h4 {
@@ -297,5 +297,10 @@ padding: 2%;
     display: block;
     margin-left: auto;
     margin-right: auto;
+}
+
+/* Navbar Style**/
+a.dropdown-toggle nav-link {
+
 }
 
