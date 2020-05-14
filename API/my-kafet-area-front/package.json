@@ -10,14 +10,15 @@
     "axios": "^0.19.2",
     "bootstrap": "^4.4.1",
     "formik": "^2.1.2",
+    "jquery": "^3.5.1",
     "react": "^16.11.0",
     "react-bootstrap": "^1.0.0-beta.16",
     "react-bootstrap-table-next": "^4.0.1",
     "react-burger-menu": "^2.6.12",
-    "react-dom": "^16.11.0",
+    "react-dom": "^16.12.0",
     "react-formik-ui": "^4.0.8",
     "react-router-dom": "^5.1.2",
-    "react-scripts": "^3.3.0",
+    "react-scripts": "^3.4.1",
     "typescript": "^3.7.2"
   },
   "scripts": {
