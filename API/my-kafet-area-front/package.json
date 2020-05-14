@@ -12,6 +12,7 @@
     "formik": "^2.1.2",
     "react": "^16.11.0",
     "react-bootstrap": "^1.0.0-beta.16",
+    "react-bootstrap-table-next": "^4.0.1",
     "react-burger-menu": "^2.6.12",
     "react-dom": "^16.11.0",
     "react-formik-ui": "^4.0.8",
