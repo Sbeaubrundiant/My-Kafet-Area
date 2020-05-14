@@ -21,6 +21,6 @@ export default function AppRouter() {
       <Route exact path="/alllunchitems" component= { AllLunchItemsBrigade } />
       <Route exact path="/collaboratorarea" component={CollaborArea} />
       <Route exact path="/reservableitems" component={ReservableItems} />
-          </Router>
+    </Router>
   );
 }

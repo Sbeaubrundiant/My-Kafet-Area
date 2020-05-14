@@ -23,7 +23,7 @@ export default function LoginPage() {
       
       <div id="page-wrap">
         
-          <img id="mkalogo" src={MKALogo} alt="LOGO" />
+          <img  id="mkalogo" src={MKALogo} alt="LOGO" />
     
         <h2 id="Pick-up-line">Your optimised canteen way...</h2>
       </div>

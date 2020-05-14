@@ -55,10 +55,9 @@ export default function LunchItemCreate() {
     >
       {props => (
         <form onSubmit={props.handleSubmit} onReset={props.handleReset}>
-          <div>
+          <div >
           
         <Radio
-      inline
             id="radioGroup"
             type="radio"
             label="Type"

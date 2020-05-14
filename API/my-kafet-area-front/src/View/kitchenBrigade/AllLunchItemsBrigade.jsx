@@ -4,6 +4,8 @@ import '../../App.css';
 import Button from 'react-bootstrap/Button';
 import { useHistory} from 'react-router-dom';
 import { Navbar, Table } from 'react-bootstrap';
+import LunchItemCard from '../../Components/LunchItemCard';
+
 
 export default function AllLunchItems()  {
         let history = useHistory();
@@ -11,8 +13,9 @@ export default function AllLunchItems()  {
         function handleClick() {
           history.push("/brigadearea");
         }
-
+ 
         const [lunchItems, setLunchItems] = useState({ lunchItems: [] });
+        
 
         useEffect(()=>{
             LunchItemDataService.retrieveAllLunchItems(AllLunchItems)
@@ -34,13 +37,12 @@ export default function AllLunchItems()  {
                     <h1 id="Pick-up-line">
                          All Lunch Items
                     </h1>
-                    
-                </div>
-                <div>
-                <Table responsive="lg"  className="table">
+               </div>
+                 <div>
+                            <Table responsive="sm"  className="table">
                       <thead>
                         <tr>
-                            <th>Type</th>
+                            <th id=" brigadeArrayColumnsTitle ">Type</th>
                             <th>Name</th>
                             <th>Description</th>
                             <th>Allergens</th>
@@ -63,6 +65,8 @@ export default function AllLunchItems()  {
                         </tbody>
                     </Table>
                 </div>
+               
+   
                      
                 </div>
     

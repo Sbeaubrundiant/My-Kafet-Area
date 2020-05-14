@@ -21,10 +21,7 @@ body {
   font-size: 3vw;
   font-family: Arial, Helvetica, sans-serif;
   color: black;
-  margin-bottom: 15px;
-  margin-left: 45px;
-  margin-right: 15px;
-  padding-left: 5vw;
+ 
 }
 #Pick-up-secondTitle {
   font-size: 3vw;
@@ -33,84 +30,8 @@ body {
   display: flex;
 }
 
-/* Individual item */
-.bm-item {
+div.radio-wrapper{
   display: inline-block;
-
-  /* Our sidebar item styling */
-  text-decoration: none;
-  margin-bottom: 10px;
-  color: #d1d1d1;
-  transition: color 0.2s;
-}
-
-/* Change color on hover */
-.bm-item:hover {
-  color: blueviolet;
-}
-
-/* The rest copied directly from react-burger-menu docs */
-
-/* Position and sizing of burger button */
-.bm-burger-button {
-  position: fixed;
-  width: 36px;
-  height: 30px;
-  left: 36px;
-  top: 36px;
- 
-
-}
-
-/* Color/shape of burger icon bars */
-.bm-burger-bars {
-  background: #373a47;
-}
-
-/* Position and sizing of clickable cross button */
-.bm-cross-button {
-  height: 24px;
-  width: 24px;
-}
-
-/* Color/shape of close button cross */
-.bm-cross {
-  background: #bdc3c7;
-}
-
-/* General sidebar styles */
-.bm-menu {
-  background: #ffffff;
-  padding: 2.5em 1.5em 0;
-  font-size: 1.15em;
-}
-
-/* Morph shape necessary with bubble or elastic */
-.bm-morph-shape {
-  fill: #373a47;
-}
-
-/* Wrapper for item list */
-.bm-item-list {
-  color: #b8b7ad;
-}
-
-/* Styling of overlay */
-.bm-overlay {
-  background: rgba(0, 0, 0, 0.3);
-}
-
-a.bm-item {
-  position: relative;
-  margin-bottom: 35px;
-}
-
-a.bm-item.menu-item img {
-  position: absolute;
-  height: 48px;
-  top: 50%;
-  right: 3rem;
-  transform: translateY(-50%);
 }
 
 
@@ -154,7 +75,7 @@ a.bm-item.menu-item img {
 
 
 #reservedTitle {
-  text-align: left;
+  text-align: center;
   font-size:15px;
   font-stretch: wider;
   
@@ -208,15 +129,6 @@ a.bm-item.menu-item img {
 font-size: 6vw;
 }
 
-#page-wrap {
-  display: flex; 
-  flex-flow: row wrap;
-  align-items: baseline;
-  justify-content: space-evenly;
-}
-#page-wrap div {
-  flex-grow: 1;
-}
 
 /*Lunch items creation form**/
 #formField{
@@ -228,11 +140,8 @@ font-size: 6vw;
   margin-bottom: 2%;
 }
 
-.radioGroup{
-border-bottom-color: crimson;
- 
 
-}
+
 #resetPropositionForm,
 #createPropositionButton, 
 #backToBrigadeButton,
@@ -264,43 +173,21 @@ border-bottom-color: crimson;
   border-radius: 0.25rem;
 }
 
-#radiobutton{
-  
-align-items: center;
-margin-left: 10vmin;
 
-margin-bottom: 2px;
-padding: 2%;
-}
 
-#titleRadio{
 
- 
- margin-right: 2%;
- margin-left: 2%;
- display: inline;
-}
 
-#radioGroup{
-  color: rgb(51, 4, 20);
-  font-stretch: extra-expanded;
-  border-color: #000000f6;
-  border-radius: 0.25rem;
-  margin-bottom: 2%;
-  margin: 2%;
-  
-}
-#mkalogo{
-  max-width:40%;
-    height:auto;
-    padding-top: 5%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
+
 
 /* Navbar Style**/
 a.dropdown-toggle nav-link {
 
 }
+
+/* AllLunchItemsBrigade array**/
+
+#brigadeArrayColumnsTitle {
+
+  font-size: 3vw;
+} 
 
