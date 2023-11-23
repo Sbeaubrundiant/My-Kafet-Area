@@ -1,34 +1,34 @@
 package fr.formation.mykafetarea.dtos;
 
 
-import javax.validation.constraints.Positive;
+import jakarta.validation.constraints.Positive;
 import jdk.jfr.BooleanFlag;
 /**
  * A composed DTO that represents useful data and validation rules in order to
  * create a lunchItem	.
  */
 public class LunchItemDto {
-	
+
 	private String type;
-	
-	
+
+
 	private String name;
-	
-	
+
+
 	private String description;
-	
-	
+
+
 	private String allergens;
-	
-	
+
+
 	@Positive
 	private Double price;
-	
+
 	@BooleanFlag
 	private Boolean reservable;
 
-	
-	
+
+
 
 	public LunchItemDto() {
 	//Default Constructor no args
@@ -128,11 +128,11 @@ public class LunchItemDto {
 				+ allergens + ", price=" + price + ", reservable=" + reservable + "]";
 	}
 
-	
 
-	
-	
-	
-	
+
+
+
+
+
 
 }

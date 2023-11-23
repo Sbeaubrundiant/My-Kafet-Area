@@ -18,17 +18,17 @@ public interface LunchItemRepository extends JpaRepository<LunchItem, Long>{
 
 	List<LunchItem> findByReservable(Boolean reservable);
 
-	
 
-	
 
-	
+
+
+
 
 
 //	Optional<LunchItem> findById(Long id);
-	
-	
-	
-	
+
+
+
+
 
 }

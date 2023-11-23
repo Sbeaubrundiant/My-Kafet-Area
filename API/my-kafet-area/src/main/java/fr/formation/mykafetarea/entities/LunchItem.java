@@ -1,10 +1,10 @@
 package fr.formation.mykafetarea.entities;
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
 
 /**
  * @author Steven  BEAUBRUN EN FAMILLE DIANT
@@ -13,34 +13,34 @@ import javax.persistence.Table;
 @Entity
 @Table(name = "lunch_items")
 public class LunchItem {
-	
+
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column(nullable = false)
 	private Long id;
-	
+
 	@Column(nullable = false)
 	private String type;
-	
+
 	@Column(nullable = false)
 	private String name;
-	
+
 	@Column(nullable = false)
 	private String description;
-	
-		
+
+
 	@Column(nullable = false)
 	private String allergens;
-	
+
 	@Column(nullable = false)
 	private Double price;
-	
+
 	@Column(nullable = true)
 	private Boolean reservable;
 
-	
-	  
-	 
+
+
+
 	public LunchItem() {
 		//Default constructor no args
 	}
@@ -72,7 +72,7 @@ public class LunchItem {
 	}
 
 	/**
-	 * @param id 
+	 * @param id
 	 * the id to set
 	 */
 	public void setId(Long id) {
@@ -87,7 +87,7 @@ public class LunchItem {
 	}
 
 	/**
-	 * @param name 
+	 * @param name
 	 * the name to set
 	 */
 	public void setName(String name) {
@@ -102,8 +102,8 @@ public class LunchItem {
 	}
 
 	/**
-	 * @param allergens 
-	 * 
+	 * @param allergens
+	 *
 	 * the allergens to set
 	 */
 	public void setAllergens(String allergens) {
@@ -118,8 +118,8 @@ public class LunchItem {
 	}
 
 	/**
-	 * @param price 
-	 * 
+	 * @param price
+	 *
 	 * the price to set
 	 */
 	public void setPrice(Double price) {
@@ -179,14 +179,14 @@ public class LunchItem {
 				+ ", allergens=" + allergens + ", price=" + price + ", reservable=" + reservable + "]";
 	}
 
-	
 
-	
 
-	
-	
-	
-	
-	
+
+
+
+
+
+
+
 
 }

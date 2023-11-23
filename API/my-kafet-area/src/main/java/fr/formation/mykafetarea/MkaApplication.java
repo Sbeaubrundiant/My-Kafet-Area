@@ -13,12 +13,12 @@ public class MkaApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(MkaApplication.class, args);
 	}
-	
-	
+
+
 	@Bean
 	protected ModelMapper modelMapper() {
 		 return new ModelMapper();
-		
+
 	}
 
 }
