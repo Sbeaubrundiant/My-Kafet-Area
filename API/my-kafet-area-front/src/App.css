@@ -1,87 +1,107 @@
-html,
-body {
+html, body {
   margin: 0;
-}
-
-#App {
-  font-family: sans-serif;
-
-  /* Give app full page to work with */
+  }
+  
+  #App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   height: 100vh;
-}
-
-#page-wrap {
-  text-align: center;
-
-  /* Prevent sidebar from showing a scrollbar on page */
+  background-color: #f2f2f2;
+  }
+  
+  #mkalogo {
+  width: 200px;
+  height: auto;
+  }
+  
+  #page-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+  /* Empêcher la barre de défilement latérale de s'afficher */
   overflow: auto;
-}
-
-#Pick-up-line {
-  font-size: 3vw;
-  font-family: Arial, Helvetica, sans-serif;
-  color: black;
- 
-}
-#Pick-up-secondTitle {
+  }
+  
+  #Pick-up-line {
+  font-size: 32px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  text-align: center;
+  }
+  #Pick-up-secondTitle {
   font-size: 3vw;
   font-family: Arial, Helvetica, sans-serif;
   color:black;
   display: flex;
-}
-
-div.radio-wrapper{
-  display: inline-block;
-}
-
-
-#formBasicEmail,
-#formBasicPassword,
-#formBasicfield {
-  width: 60%;
-  margin-top: 2%;
-  margin-left: 20%;
-  margin-right: 20%;
-}
-
-#mailHolder,
-#passwordHolder {
-  text-align: center;
-}
-
-.text-muted {
-  text-align: center;
-}
-
-#formBasicCheckbox {
-  margin-left: 25%;
-  margin-right: 25%;
-}
-
-#homeSubmitButton,
-#homeForgotPassword,
-#brigadeArea,
-#collaboratorArea{
-  text-align: center;
-  width: 30%;
-  margin-left: 35%;
-  margin-right: 35%;
-  margin-bottom: 2px;
-  color: black;
-  background-color:  #a6b9a2;
-}
- 
-
-
-
-#reservedTitle {
-  text-align: center;
-  font-size:15px;
-  font-stretch: wider;
+  }
   
-  background-color: lightgrey;
-  border: 2px solid rgba(179, 187, 204, 0.743);
-  border-radius: 5px;
+  div.radio-wrapper {
+  display: inline-block;
+  }
+  
+  .text-muted {
+  text-align: center;
+  }
+  
+  .form-group {
+  margin-bottom: 20px;
+  text-align: center;
+  }
+  
+  .form-control {
+  height: 50px;
+  border-radius: 25px;
+  border: none;
+  padding-left: 20px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .form-control:focus {
+  outline: none;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.4);
+  }
+  
+  
+  
+  #homeSubmitButton,
+  #backToLoginPage:hover,
+  #homeForgotPassword:hover ,
+  #backToLoginPage {
+  background-color: #0099ff;
+  }
+  
+  #homeForgotPassword,
+  #backToLoginPage {
+  width: 100%;
+  height: 50px;
+  border-radius: 25px;
+  background-color: #f2f2f2;
+  border: none;
+  margin-top: 20px;
+  color: #555;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  #homeSubmitButton,
+  #homeForgotPassword,
+  #backToLoginPage {
+  width: 100%;
+  height: 50px;
+  border-radius: 25px;
+  background-color: #a6b9a2;
+  border: none;
+  margin-top: 20px;
+  color: black;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  #homeSubmitButton:hover,
+  #homeForgotPassword:hover ,
+  #backToLoginPage:hover {
+  background-color: #0099ff;
+  
   
 }
 
@@ -147,14 +167,13 @@ font-size: 6vw;
 #backToBrigadeButton,
 #goToLunchItemCreation,
 #goToReservableItems,
-#backToLoginPage,
 #goToLunchItemlist,
 #goToBrigadeArea,
 #validLunchBag,
 #goToCollaborartorArea {
   text-align: center;
   width: 30%;
-  margin-left: 35%;
+    margin-left: 35%;
   margin-right: 35%;
   margin-bottom: 2px;
   color: black;
@@ -189,5 +208,5 @@ a.dropdown-toggle nav-link {
 #brigadeArrayColumnsTitle {
 
   font-size: 3vw;
-} 
+}
 

@@ -35,7 +35,7 @@ export default function LunchItemCreate() {
       initialValues={{ type: ''  ,  name: '' ,  description: '' ,  allergens: '' ,  price: '' , reservable: false }}
       onSubmit={(values) => {
         setTimeout(() => {
-          axios({
+          axios({    
             method: 'post', 
             url: 'http://localhost:8082/reac/lunchitems',
             data: {

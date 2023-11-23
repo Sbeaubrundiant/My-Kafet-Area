@@ -1,7 +1,6 @@
 import React, { FunctionComponent, useState, useEffect } from 'react';
 import { useHistory } from 'react-router-dom';
 import LunchItemDataService from '../service/LunchItemDataService';
-import { type } from 'os';
 import Card from 'react-bootstrap/Card';
 import Container from 'react-bootstrap/Container';
 

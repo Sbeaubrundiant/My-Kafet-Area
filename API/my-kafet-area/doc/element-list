@@ -1,0 +1,7 @@
+fr.formation.mykafetarea
+fr.formation.mykafetarea.controllers
+fr.formation.mykafetarea.dtos
+fr.formation.mykafetarea.entities
+fr.formation.mykafetarea.repositories
+fr.formation.mykafetarea.services
+fr.formation.mykafetarea.services.impl
