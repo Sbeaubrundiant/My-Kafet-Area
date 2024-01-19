@@ -37,7 +37,7 @@ export default function LunchItemCreate() {
         setTimeout(() => {
           axios({    
             method: 'post', 
-            url: 'http://localhost:8082/reac/lunchitems',
+            url: 'http://localhost:3000/reac/LunchItemCreate',
             data: {
               type: values.type,
               name: values.name,
@@ -49,7 +49,7 @@ export default function LunchItemCreate() {
 
           })
           alert(JSON.stringify(values, null, 2));
-          //setValues.setSubmitting(false);
+          setValues.setSubmitting(false);
         }, 1000);
       }}
     >
