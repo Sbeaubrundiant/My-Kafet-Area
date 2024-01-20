@@ -78,7 +78,13 @@
 			<version>3.0.4</version>
 			<type>maven-plugin</type>
 		</dependency>
-	</dependencies>
+	
+   <dependency>
+     <groupId>com.google.guava</groupId>
+     <artifactId>guava</artifactId>
+     <version>28.0-jre</version>
+   </dependency>
+ </dependencies>
 
 	<build>
 		<plugins>
